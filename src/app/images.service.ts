@@ -11,7 +11,7 @@ export class ImagesService {
 
   constructor(private http : HttpClient) { }
 
-  apiKey : string = "fakeCode";
+  apiKey : string = "ec5ed7f7ffca85d7347031e853bf38eb";
 
   private apiUrl : string = `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${this.apiKey}&user_id=munduswilmondo&format=json&nojsoncallback=1`;
 
@@ -24,8 +24,8 @@ export class ImagesService {
       .append('Access-Control-Allow-Origin', '*');
 
     this.http.get(this.apiUrl).subscribe((data : any) => {
-      this.information = data;
-      console.log(data);
+      this.information = data.photos.photo;
+      
       callback();
     },
     (err : any) => {

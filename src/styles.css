@@ -1,1 +1,6 @@
-@import "~bootstrap/dist/css/bootstrap.min.css"
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+#rightColumn {
+    background: red;
+    height: 800px;
+}

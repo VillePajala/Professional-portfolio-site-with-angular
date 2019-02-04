@@ -1,10 +1,27 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
+<div class="container" id="frame">
+
+  
+
+  <div class="row">
+
+    <div class="col-md-4">
+        <div class="container" id="header">
+            <div style="text-align:center">
+              <h1>
+                Ville Johannes Pajala
+              </h1>
+
+              <h5>
+                <a routerLink="art">Drawings</a>
+              </h5>
+            </div>
+          </div>
+    </div>
+
+    <div class="col-md-8">
+        <router-outlet></router-outlet>
+    </div>
+
+  </div>
+
 </div>
-
-<button routerLink="art">Art</button>
-
-<router-outlet></router-outlet>

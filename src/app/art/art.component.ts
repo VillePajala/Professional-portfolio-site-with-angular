@@ -8,12 +8,13 @@ import { ImagesService } from '../images.service';
 })
 export class ArtComponent implements OnInit {
 
-  data : object;
+  pictureData : object;
 
   constructor(private images : ImagesService) { }
 
   setValues = () : void => {
-    this.data = this.images.information;
+    this.pictureData = this.images.information;
+    console.log(this.pictureData);
   }
 
 
