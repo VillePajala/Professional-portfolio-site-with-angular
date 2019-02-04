@@ -1,6 +1,13 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 #rightColumn {
-    background: red;
     height: 800px;
+}
+a {
+    color:gray;
+    
+}
+a:hover {
+    text-decoration: none;
+    color:black;
 }
