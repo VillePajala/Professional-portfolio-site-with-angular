@@ -9,5 +9,5 @@ export class ApiService {
 
   apiKey : string = "ec5ed7f7ffca85d7347031e853bf38eb";
 
-
+  number :number = 0; 
 }
