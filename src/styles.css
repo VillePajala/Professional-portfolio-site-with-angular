@@ -1,13 +1,33 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+/* 
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Economica', sans-serif;
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Saira', sans-serif;
+font-family: 'Saira Semi Condensed', sans-serif;
+*/
 
 #rightColumn {
     height: 800px;
 }
+#leftColumn {
+    
+    height: 800px;
+}
 a {
     color:gray;
-    
+}
+a h1 {
+    color: black;
 }
 a:hover {
     text-decoration: none;
     color:black;
+}
+h1 {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+h6 {
+    font-family: 'Saira', sans-serif;
 }

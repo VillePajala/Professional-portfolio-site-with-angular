@@ -6,12 +6,17 @@ import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { ArtComponent } from './art/art.component';
+import { AboutComponent } from './about/about.component';
 
 const routes : Routes = [
                       {
                         path : "art",
                         component : ArtComponent
-                      }
+                      },
+                      {
+                        path : "",
+                        component : AboutComponent
+                      },                      
 
 
 ]
@@ -19,7 +24,8 @@ const routes : Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    ArtComponent
+    ArtComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
