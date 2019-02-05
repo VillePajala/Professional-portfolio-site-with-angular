@@ -7,6 +7,9 @@ import { FormsModule } from '@angular/forms'
 import { AppComponent } from './app.component';
 import { ArtComponent } from './art/art.component';
 import { AboutComponent } from './about/about.component';
+import { MusicComponent } from './music/music.component';
+import { DesignComponent } from './design/design.component';
+import { GamesComponent } from './games/games.component';
 
 const routes : Routes = [
                       {
@@ -17,7 +20,14 @@ const routes : Routes = [
                         path : "",
                         component : AboutComponent
                       },                      
-
+                      {
+                        path : "music",
+                        component : MusicComponent
+                      },
+                      {
+                        path : "games",
+                        component : GamesComponent
+                      },                         
 
 ]
 
@@ -25,7 +35,10 @@ const routes : Routes = [
   declarations: [
     AppComponent,
     ArtComponent,
-    AboutComponent
+    AboutComponent,
+    MusicComponent,
+    DesignComponent,
+    GamesComponent
   ],
   imports: [
     BrowserModule,
