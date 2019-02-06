@@ -13,16 +13,20 @@ import { GamesComponent } from './games/games.component';
 
 const routes : Routes = [
                       {
-                        path : "art",
-                        component : ArtComponent
-                      },
-                      {
                         path : "",
                         component : AboutComponent
-                      },                      
+                      },   
+                      {
+                        path : "art",
+                        component : ArtComponent
+                      },                     
                       {
                         path : "music",
                         component : MusicComponent
+                      },
+                      {
+                        path : "design",
+                        component : DesignComponent
                       },
                       {
                         path : "games",

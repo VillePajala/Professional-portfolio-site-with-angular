@@ -20,6 +20,11 @@ font-family: 'Saira Semi Condensed', sans-serif;
 #leftColumn {
     
 }
+#bodytext {
+    padding: 40px;
+    text-align: justify;
+    box-shadow: 0 2px 15px silver;
+}
 
 /* Nav */
 
@@ -69,15 +74,19 @@ figcaption {
 }
 
 #art {
-    width: 400px;
+    width: 500px;
     padding: 5px 0;
     /* border-left: 5px solid white;
     border-right: 5px solid white;
     box-shadow: 0 2px 15px silver; */
 }
+#music {
+    width: 100%;
+    padding: 5px 0;
+}
 
 
-/* iframe */
+/* Video Content */
 
 .iframe-container {
     overflow: hidden;
