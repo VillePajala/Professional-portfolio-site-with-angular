@@ -23,7 +23,8 @@ font-family: 'Saira Semi Condensed', sans-serif;
 #bodytext {
     padding: 40px;
     text-align: justify;
-    box-shadow: 0 2px 15px silver;
+    margin-top: 20px;
+    /* box-shadow: 0 2px 15px silver; */
 }
 
 /* Nav */
@@ -69,8 +70,8 @@ figcaption {
 /* Images */
 #profilepic {
     padding: 5px 30px;
-    -webkit-filter: drop-shadow(0px 2px 5px silver);
-    filter:         drop-shadow(0px 2px 15px silver);
+    /* -webkit-filter: drop-shadow(0px 2px 5px silver);
+    filter:         drop-shadow(0px 2px 15px silver); */
 }
 
 #art {
