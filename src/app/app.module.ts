@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { MusicComponent } from './music/music.component';
 import { DesignComponent } from './design/design.component';
 import { GamesComponent } from './games/games.component';
+import { DevComponent } from './dev/dev.component';
 
 const routes : Routes = [
                       {
@@ -31,7 +32,11 @@ const routes : Routes = [
                       {
                         path : "games",
                         component : GamesComponent
-                      },                         
+                      }, 
+                      {
+                        path : "dev",
+                        component : DevComponent
+                      }                        
 
 ]
 
@@ -42,7 +47,8 @@ const routes : Routes = [
     AboutComponent,
     MusicComponent,
     DesignComponent,
-    GamesComponent
+    GamesComponent,
+    DevComponent
   ],
   imports: [
     BrowserModule,
