@@ -11,6 +11,7 @@ import { MusicComponent } from './music/music.component';
 import { DesignComponent } from './design/design.component';
 import { GamesComponent } from './games/games.component';
 import { DevComponent } from './dev/dev.component';
+import { CurriculumComponent } from './curriculum/curriculum.component';
 
 const routes : Routes = [
                       {
@@ -36,7 +37,11 @@ const routes : Routes = [
                       {
                         path : "dev",
                         component : DevComponent
-                      }                        
+                      },
+                      {
+                        path : "curriculum",
+                        component : CurriculumComponent
+                      }                                               
 
 ]
 
@@ -48,7 +53,8 @@ const routes : Routes = [
     MusicComponent,
     DesignComponent,
     GamesComponent,
-    DevComponent
+    DevComponent,
+    CurriculumComponent
   ],
   imports: [
     BrowserModule,
