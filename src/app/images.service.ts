@@ -12,7 +12,7 @@ export class ImagesService {
 
   constructor(private http : HttpClient, private api : ApiService) { }
 
-  apiKey : string = this.api.apiKey;
+  /* apiKey : string = this.api.apiKey;
 
   private apiUrl : string = `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${this.apiKey}&user_id=munduswilmondo&format=json&nojsoncallback=1`;
 
@@ -33,7 +33,7 @@ export class ImagesService {
       console.log(err);
     });
 
-  }
+  } */
 
 
 
