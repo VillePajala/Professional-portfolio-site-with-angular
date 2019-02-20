@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { HttpHeaders} from '@angular/common/http';
-import { ApiService } from './api.service';
+
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +10,7 @@ export class ImagesService {
 
   information : object = [];
 
-  constructor(private http : HttpClient, private api : ApiService) { }
+  constructor(private http : HttpClient) { }
 
   /* apiKey : string = this.api.apiKey;
 
