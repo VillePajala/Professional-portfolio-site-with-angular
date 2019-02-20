@@ -18,11 +18,11 @@ export class ArtComponent implements OnInit {
   }
 
 
-  getData = () : void => {
+  /* getData = () : void => {
 
     this.images.getImages(this.setValues)
 
-  }
+  } */
 
   ngOnInit() {
   }
