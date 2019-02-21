@@ -1,4 +1,6 @@
-# Portfolio
+# Portfolio of Ville Pajala
+
+This is a professional portfolio I'm building formyself to showcase some of the things that I have done over the years. It is still under construction and will propably be developed for a long time. You can visit the the site at https://villepajala.herokuapp.com/ (Proper domain will be added later.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
 
