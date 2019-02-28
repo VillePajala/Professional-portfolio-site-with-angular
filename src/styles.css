@@ -18,12 +18,14 @@ font-family: 'Saira Semi Condensed', sans-serif;
 }
 #rightColumn {
     min-height: 1200px;
+    max-width: 500px;
     margin: auto;
     text-align: center;
     
 }
 #leftColumn {
     /* box-shadow: 5px 2px 5px rgb(228, 227, 227); */
+    margin-left: 50px;
 }
 #bodytext {
     max-width: 500px;  
@@ -45,6 +47,7 @@ font-family: 'Saira Semi Condensed', sans-serif;
     margin-bottom: 10px;
     height: 90px;
     border: 2px solid white;
+    max-width: 500px;
 }
 #siteHeader {
     text-align: center;
@@ -204,7 +207,7 @@ figcaption {
 @media only screen and (min-width: 992px) {
     
     #profilepic {
-        padding: 50px 150px;
+        padding: 30px 150px;
     }
 
 }
@@ -213,7 +216,7 @@ figcaption {
 @media only screen and (min-width: 1200px) {
 
     #profilepic {
-        padding: 50px 150px;
+        padding: 30px 150px;
     }
 
  
