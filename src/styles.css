@@ -23,7 +23,7 @@ font-family: 'Saira Semi Condensed', sans-serif;
     
 }
 #leftColumn {
-    box-shadow: 5px 2px 5px rgb(228, 227, 227);
+    /* box-shadow: 5px 2px 5px rgb(228, 227, 227); */
 }
 #bodytext {
     max-width: 500px;  
@@ -66,8 +66,8 @@ font-family: 'Saira Semi Condensed', sans-serif;
     max-width: 500px;
 }
 #socialMediaButton {
-    padding: 7px;
-    font-size: 25px; 
+    padding-left: 10px;
+    font-size: 15px; 
     color: gray;
 }
 
