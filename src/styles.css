@@ -9,27 +9,61 @@ font-family: 'Saira Semi Condensed', sans-serif;
 
 /* Content */
 #frame {
-    max-width: 960px;;
+    max-width: 960px;
+}
+#mainHeader {
+    text-align: center;
+    margin: auto;
+    padding: 30px;
 }
 #rightColumn {
-    /* background: silver; */
     min-height: 1200px;
     margin: auto;
     text-align: center;
+    padding-left: 50px;
 }
 #leftColumn {
-    
+    box-shadow: 5px 2px 5px rgb(228, 227, 227);
 }
 #bodytext {
-    padding: 40px;
+    max-width: 500px;  
     text-align: justify;
     margin-top: 20px;
-    /* box-shadow: 0 2px 15px silver; */
 }
 #cvcard {
     padding: 20px;
     text-align: left;
     box-shadow: 0 2px 10px rgb(238, 237, 237);
+}
+#pageHeader {
+    padding: 25px;
+    background: #304352;
+    background: -webkit-linear-gradient(to right, #304352, #d7d2cc);
+    background: linear-gradient(to top, #304352, #d7d2cc);
+    color: white;
+    box-shadow: 0 2px 10px silver;
+    margin-bottom: 10px;
+    height: 90px;
+    border: 2px solid white;
+}
+#siteHeader {
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+    background: #304352;
+    background: -webkit-linear-gradient(to right, #304352, #d7d2cc);
+    background: linear-gradient(to bottom, #304352, #d7d2cc);
+    color: white;
+    box-shadow: 0 2px 10px silver;
+    height: 105px;
+    border: 2px solid white;
+}
+#introText {
+    padding: 15px 30px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 25px;
+    max-width: 500px;
 }
 
 /* Nav */
@@ -42,21 +76,21 @@ a h6{
 a h6:hover{
     color:black;
     text-decoration: none;
-    text-shadow: 0 0px 5px silver;
 }
 a h1 {
     color: black;
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: none;
     color:black;
-    
 }
 
 /* Headers */
 h1 {
+    font-family: 'Julius Sans One', sans-serif;
+}
+h2 {
     font-family: 'Julius Sans One', sans-serif;
 }
 h3 {
@@ -65,30 +99,25 @@ h3 {
 }
 h5 {
     padding: 5px 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Julius Sans One', sans-serif;
 }
 h6 {
     padding: 5px 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Julius Sans One', sans-serif;
 }
 figcaption {
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-bottom: 20px;
 }
 
 /* Images */
 #profilepic {
-    padding: 5px 30px;
-    /* -webkit-filter: drop-shadow(0px 2px 5px silver);
-    filter:         drop-shadow(0px 2px 15px silver); */
+    padding: 5px 50px;
 }
 
 #art {
     width: 500px;
     padding: 5px 0;
-    /* border-left: 5px solid white;
-    border-right: 5px solid white;
-    box-shadow: 0 2px 15px silver; */
 }
 #music {
     width: 100%;
@@ -102,16 +131,16 @@ figcaption {
     overflow: hidden;
     padding-top: 56.25%;
     position: relative;
-  }
-  
-  .iframe-container iframe {
-     border: 0;
-     height: 100%;
-     left: 0;
-     position: absolute;
-     top: 0;
-     width: 100%;
-  }
+}
+
+.iframe-container iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 
 
 
@@ -153,7 +182,7 @@ figcaption {
 @media only screen and (min-width: 992px) {
     
     #profilepic {
-        padding: 50px 100px;
+        padding: 50px 150px;
     }
 
 }
@@ -162,7 +191,7 @@ figcaption {
 @media only screen and (min-width: 1200px) {
 
     #profilepic {
-        padding: 50px 100px;
+        padding: 50px 150px;
     }
 
  

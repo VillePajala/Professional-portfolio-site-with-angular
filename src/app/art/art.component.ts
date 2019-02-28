@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ImagesService } from '../images.service';
 
 @Component({
   selector: 'app-art',
@@ -10,19 +9,12 @@ export class ArtComponent implements OnInit {
 
   pictureData : object;
 
-  constructor(private images : ImagesService) { }
+  constructor() { }
 
   setValues = () : void => {
-    this.pictureData = this.images.information;
-    console.log(this.pictureData);
+    
   }
 
-
-  /* getData = () : void => {
-
-    this.images.getImages(this.setValues)
-
-  } */
 
   ngOnInit() {
   }
