@@ -20,7 +20,7 @@ font-family: 'Saira Semi Condensed', sans-serif;
     min-height: 1200px;
     margin: auto;
     text-align: center;
-    padding-left: 50px;
+    
 }
 #leftColumn {
     box-shadow: 5px 2px 5px rgb(228, 227, 227);
@@ -65,6 +65,11 @@ font-family: 'Saira Semi Condensed', sans-serif;
     margin-bottom: 25px;
     max-width: 500px;
 }
+#socialMediaButton {
+    padding: 7px;
+    font-size: 25px; 
+    color: gray;
+}
 
 /* Nav */
 
@@ -78,7 +83,11 @@ a h6:hover{
     text-decoration: none;
 }
 a h1 {
-    color: black;
+    color: white;
+    text-decoration: none;
+}
+a {
+    color:gray;
     text-decoration: none;
 }
 a:hover {
@@ -90,7 +99,7 @@ a:hover {
 h1 {
     font-family: 'Julius Sans One', sans-serif;
 }
-h2 {
+h2, h4 {
     font-family: 'Julius Sans One', sans-serif;
 }
 h3 {
@@ -150,13 +159,19 @@ figcaption {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 576px) {
- 
+    #rightColumn {
+        padding-top: 15px;
+        margin-top: 5px;
+    }
  
 }
   
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 576px) {
-
+    #rightColumn {
+        padding-top: 15px;
+        margin-top: 0;
+    }
     #profilepic {
         
     }
@@ -167,7 +182,8 @@ figcaption {
 @media only screen and (min-width: 768px) {
 
     #rightColumn {
-        padding-top: 50px;
+        padding-top: 20px;
+        margin-top: 10px;
     }
     #profilepic {
         padding: 20px 30px;
