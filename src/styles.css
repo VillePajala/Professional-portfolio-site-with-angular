@@ -36,7 +36,7 @@ font-family: 'Saira Semi Condensed', sans-serif;
     box-shadow: 0 2px 10px rgb(238, 237, 237);
 }
 #pageHeader {
-    padding: 25px;
+    padding: 25px 0;
     background: #304352;
     background: -webkit-linear-gradient(to right, #304352, #d7d2cc);
     background: linear-gradient(to top, #304352, #d7d2cc);
@@ -99,11 +99,15 @@ a:hover {
 h1 {
     font-family: 'Julius Sans One', sans-serif;
 }
-h2, h4 {
+h2 {
+    font-size: 30px;
     font-family: 'Julius Sans One', sans-serif;
 }
 h3 {
     font-size: 20px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+h4 {
     font-family: 'Julius Sans One', sans-serif;
 }
 h5 {
@@ -162,6 +166,8 @@ figcaption {
     #rightColumn {
         padding-top: 15px;
         margin-top: 5px;
+    }
+    h2 {
     }
  
 }
