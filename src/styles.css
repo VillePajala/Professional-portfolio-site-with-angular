@@ -128,7 +128,7 @@ figcaption {
 
 /* Images */
 #profilepic {
-    padding: 5px 50px;
+    padding: 5px 0px;
 }
 
 #art {
@@ -207,7 +207,7 @@ figcaption {
 @media only screen and (min-width: 992px) {
     
     #profilepic {
-        padding: 30px 150px;
+        padding: 30px 80px;
     }
 
 }
@@ -216,7 +216,7 @@ figcaption {
 @media only screen and (min-width: 1200px) {
 
     #profilepic {
-        padding: 30px 150px;
+        padding: 30px 80px;
     }
 
  
