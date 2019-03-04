@@ -7,7 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DevComponent implements OnInit {
 
+  category : string = "";
+
   constructor() { }
+
+  showPanel = (id) : void => {
+
+    if (this.category == id) {
+      this.category = "";
+    } else {
+      this.category = id;
+    }
+    
+  }
 
   ngOnInit() {
   }

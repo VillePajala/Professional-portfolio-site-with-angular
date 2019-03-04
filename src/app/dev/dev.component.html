@@ -1,32 +1,91 @@
 <div class="container" id="rightColumn">
 
     <div class="container" id="pageHeader">
-        <h6>Code</h6>
+        <h2>Code</h2>
     </div>
 
   <!-- <img src="assets/img/cv/code.png" class="img-fluid"> -->
 
   
 
-  <h4>Stuff that I have build:</h4>
+  <h5>Selected applications that I have programmed:</h5>
 
-  <br><br>
+  <br>
 
-  <div class="card" style="text-align: center">
-      <h5>Angular:</h5>
-      <h6>Personal portfolio site</h6>
-      <h6>Currency Converter</h6>
-      <h6>Debt Calculator</h6>
-      <h6>Body Mass Index Calculator</h6>
+  <div class="card mb-2" id="pointer">
+
+    <h6 (click)="showPanel('angular')" class="pointer">Front-End with Angular:</h6>
+
+    <div *ngIf="category =='angular'">
+      <p>Personal portfolio site</p>
+      <p>Currency Converter</p>
+      <p>Debt Calculator</p>
+      <p>Body Mass Index Calculator</p>
+    </div>
+      
   </div>
+
+  <div class="card  mb-2" id="pointer">
+
+    <h6 (click)="showPanel('node')">Back-End with Node.js:</h6>
+
+    <div *ngIf="category =='node'">
+      <p>User Data Manager (REST API)</p>
+      <p>User access Manager</p>
+      <p>Simple Blog Writer</p>
+      <p>Movie data search engine (API)</p>
+      <p>News Aggregator (RSS)</p>
+      <p>Internship options notebook</p>
+      <p>Pedometer data visualizer</p>
+    </div>
+      
+  </div>
+
+  <div class="card mb-2" id="pointer">
+
+    <h6 (click)="showPanel('mobile')" class="pointer">Mobile (hybrid) with Ionic:</h6>
+
+    <div *ngIf="category =='mobile'">
+      <p>News aggregator (API)</p>
+      <p>Weather app (API)</p>
+    </div>   
+  </div>
+      
+
+  <div class="card mb-2" id="pointer">
+
+    <h6 (click)="showPanel('games')" class="pointer">Games with Unity3D and c#:</h6>
+
+    <div *ngIf="category =='games'">
+      <p>The tunnel</p>
+      <p>The Island of Magick</p>
+      <p>Apple Hill Kill</p>
+      <p>Agent Amazement</p>
+      <p>Piller Roller</p>
+    </div>  
+  </div>
+
+
+  <div class="card mb-2"  id="pointer">
+
+    <h6 (click)="showPanel('other')">Other:</h6>
+
+    <div *ngIf="category =='other'">
+      <p>Taxi fare calculator (PHP, JavaScript)</p>
+      <p>Weather app (PHP, JavaScript)</p>
+    </div>   
+  </div>
+      
+
+     
   
-  <div class="card">
+  <!-- <div class="card">
     <a href="https://github.com/VillePajala" target="_blank">My Public GitHub</a>
   </div>
 
   <div class="card">
     <a href="https://github.com/ovipa017-xamk" target="_blank">My Private GitHub</a>
-  </div>
+  </div> -->
 
 
 </div>
