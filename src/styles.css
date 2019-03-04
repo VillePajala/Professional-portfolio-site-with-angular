@@ -21,11 +21,11 @@ font-family: 'Saira Semi Condensed', sans-serif;
     max-width: 500px;
     margin: auto;
     text-align: center;
-    
+    animation-name: drop;
+  animation-duration: 1s;
 }
 #leftColumn {
-    /* box-shadow: 5px 2px 5px rgb(228, 227, 227); */
-    /* margin-left: 50px; */
+    /* background: silver; */
 }
 #bodytext {
     max-width: 500px;  
@@ -38,28 +38,21 @@ font-family: 'Saira Semi Condensed', sans-serif;
     box-shadow: 0 2px 10px rgb(238, 237, 237);
 }
 #pageHeader {
-    padding: 25px 0;
-    background: #304352;
-    background: -webkit-linear-gradient(to right, #304352, #d7d2cc);
-    background: linear-gradient(to top, #304352, #d7d2cc);
-    color: white;
-    box-shadow: 0 2px 10px silver;
+    padding: 15px 0;
     margin-bottom: 10px;
-    height: 90px;
-    border: 2px solid white;
+    /* height: 90px; */
     max-width: 500px;
+    /* border-bottom: 1px solid silver; */
 }
 #siteHeader {
+    /* box-shadow: 0 1px 10px silver; */
     text-align: center;
     margin: auto;
     padding: 30px;
-    background: #304352;
-    background: -webkit-linear-gradient(to right, #304352, #d7d2cc);
-    background: linear-gradient(to bottom, #304352, #d7d2cc);
-    color: white;
-    box-shadow: 0 2px 10px silver;
+    color: black;
+    font-size: 50px;
     height: 105px;
-    border: 2px solid white;
+    border-bottom: 1px solid rgb(233, 233, 233);
 }
 #introText {
     padding: 15px 30px;
@@ -69,24 +62,32 @@ font-family: 'Saira Semi Condensed', sans-serif;
     max-width: 500px;
 }
 #socialMediaButton {
+    text-align: right;
     padding-left: 10px;
     font-size: 15px; 
     color: gray;
 }
-
+#info {
+ width: 800px;
+ text-align: left;
+ float: left;
+}
 /* Nav */
 
 /* Links */
 a h6{
     color:gray;
     text-decoration: none;
+    transition: 4s;
 }
 a h6:hover{
+    padding: 8px 20px;
     color:black;
+    background-color: rgb(245, 245, 245);
     text-decoration: none;
+    transition: 0.5s;
 }
 a h1 {
-    color: white;
     text-decoration: none;
 }
 a {
@@ -96,6 +97,7 @@ a {
 a:hover {
     text-decoration: none;
     color:black;
+    
 }
 
 /* Headers */
@@ -114,15 +116,16 @@ h4 {
     font-family: 'Julius Sans One', sans-serif;
 }
 h5 {
-    padding: 5px 0;
+    padding: 10px 0;
     font-family: 'Julius Sans One', sans-serif;
 }
 h6 {
-    padding: 5px 0;
+    padding: 8px;
     font-family: 'Julius Sans One', sans-serif;
 }
 figcaption {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    font-family: 'Julius Sans One', sans-serif;
     padding-bottom: 20px;
 }
 
@@ -159,6 +162,13 @@ figcaption {
 }
 
 
+/* Animations */
+
+@keyframes drop {
+    0%   {transform: translate( 0px, 800px); opacity: 0;}
+    100% {transform: translate( 0px, 0px); opacity: 1;}
+}
+
 
 
 /* RWD */
@@ -171,6 +181,7 @@ figcaption {
         margin-top: 5px;
     }
     h2 {
+
     }
  
 }
@@ -198,8 +209,6 @@ figcaption {
         padding: 20px 30px;
     }
 
-    
-    
 }
 
   
@@ -219,6 +228,5 @@ figcaption {
         padding: 30px 80px;
     }
 
- 
 }
 

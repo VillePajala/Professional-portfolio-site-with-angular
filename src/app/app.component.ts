@@ -8,10 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  navbarOpen = false;
+  navbarOpen : boolean = false;
+  panelOpen : boolean = false;
 
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
+  }
+
+  togglePanel() {
+    this.panelOpen = !this.panelOpen;
   }
 
   data : object;
