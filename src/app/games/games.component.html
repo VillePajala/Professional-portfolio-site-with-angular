@@ -1,37 +1,69 @@
 <div class="container" id="rightColumn">
 
-    <div class="container" id="pageHeader">
-      <h2>Games</h2>
+  <div class="container" id="pageHeader">
+    <h2>Games</h2>
+  </div>
+
+  <img src="assets/img/games/the_tunnel.png" (click)="showGame1()" class="img-fluid" id="music">
+
+  <div *ngIf="togglePanel1">
+    <div class="iframe-container mb-1">
+      <iframe src="https://www.youtube.com/embed/zJPK_2dke8A" 
+      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe> 
     </div>
-
-  <img src="assets/img/games/the_tunnel.png" class="img-fluid" id="music">
-
-  <div class="iframe-container mb-1">
-    <iframe src="https://www.youtube.com/embed/zJPK_2dke8A" 
-    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen></iframe> 
+    <div class="iframe-container">
+      <iframe src="https://www.youtube.com/embed/MSvFKWTAOIo" 
+      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+    </div>
+    <figcaption><i>"The tunnel"</i>, 3D <br> Download from <a href="https://villepajala.itch.io/the-tunnel">itch.io</a><br> 
+      See in <a href="https://github.com/VillePajala/The-Tunnel">GitHub.</a>
+    </figcaption> 
   </div>
-  <div class="iframe-container">
-    <iframe src="https://www.youtube.com/embed/MSvFKWTAOIo" 
-    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen></iframe>
+  
+
+  <img src="assets/img/games/iom.png" (click)="showGame3()" class="img-fluid" id="music">
+
+  <div *ngIf="togglePanel3" id="gameDiv">
+    <div class="iframe-container">
+      <iframe src="https://www.youtube.com/embed/77Y0aqixfug" 
+      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+    </div>
+    <figcaption><i>"Island Of Magick"</i>, 3D <br> Play: <a href="https://villepajala.itch.io/the-island-of-magick">itch.io</a><br> 
+      See in <a href="https://github.com/VillePajala/Island-of-Magick">GitHub.</a>
+    </figcaption>
   </div>
-  <figcaption><i>"The tunnel"</i>, 3D <br> Download from <a href="https://villepajala.itch.io/the-tunnel">itch.io</a><br> 
-    See in <a href="https://github.com/VillePajala/The-Tunnel">GitHub.</a>
-  </figcaption>
 
-  <img src="assets/img/games/agent_amazement.png" class="img-fluid" id="music">
+  
+  <img src="assets/img/games/apple_hill_kill.jpg" (click)="showGame4()" class="img-fluid" id="music">
 
-  <div class="iframe-container">
-    <iframe src="https://www.youtube.com/embed/HqZQuZfbOGk" 
-    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen></iframe>
+  <div *ngIf="togglePanel4">
+    <div class="iframe-container">
+      <iframe src="https://www.youtube.com/embed/4RdcjRlmqOU" 
+      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+    </div>
+    <figcaption><i>"Apple Hill Kill"</i>, 3D <br> Play: <a href="https://villepajala.itch.io/apple-hill-kill">itch.io</a><br> 
+      See in <a href="https://github.com/VillePajala/aPPLE-hILL-kILL">GitHub.</a>
+    </figcaption>
   </div>
-  <figcaption><i>"Agent Amazement"</i>, 2D <br> Play: <a href="https://villepajala.itch.io/agent-amazement-play-in-browser">itch.io</a><br> 
-    See in <a href="https://github.com/VillePajala/Agent-Amazement">GitHub.</a>
-  </figcaption>
 
 
+  <img src="assets/img/games/agent_amazement.png" (click)="showGame2()" class="img-fluid" id="music">
+
+  <div *ngIf="togglePanel2">
+    <div class="iframe-container">
+      <iframe src="https://www.youtube.com/embed/HqZQuZfbOGk" 
+      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+    </div>
+    <figcaption><i>"Agent Amazement"</i>, 2D <br> Play: <a href="https://villepajala.itch.io/agent-amazement-play-in-browser">itch.io</a><br> 
+      See in <a href="https://github.com/VillePajala/Agent-Amazement">GitHub.</a>
+    </figcaption>
+  </div>
+  
 </div>
 
 

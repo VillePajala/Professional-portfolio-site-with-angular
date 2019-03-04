@@ -62,15 +62,25 @@ font-family: 'Saira Semi Condensed', sans-serif;
     max-width: 500px;
 }
 #socialMediaButton {
-    text-align: right;
+    text-align: center;
     padding-left: 10px;
     font-size: 15px; 
     color: gray;
 }
+#activePageIcon {
+    text-align: left;
+    padding-left: 10px;
+    font-size: 13px; 
+    color: silver;
+    transform: translate(-20px,0px);
+}
 #info {
- width: 800px;
- text-align: left;
- float: left;
+    width: 800px;
+    text-align: left;
+    float: left;
+}
+#gameDiv {
+    
 }
 /* Nav */
 
@@ -105,6 +115,7 @@ h1 {
     font-family: 'Julius Sans One', sans-serif;
 }
 h2 {
+    padding: none;
     font-size: 30px;
     font-family: 'Julius Sans One', sans-serif;
 }
