@@ -4,9 +4,93 @@
     <h2>Games</h2>
   </div>
 
-  <img src="assets/img/games/the_tunnel.png" (click)="showGame1()" class="img-fluid" id="music">
 
-  <div *ngIf="togglePanel1">
+  <div id="accordion">
+
+    <div class="">
+      <div class="">
+        <img src="assets/img/games/the_tunnel.png"  data-toggle="collapse" data-target="#collapseOne" class="img-fluid" id="music">
+      </div>
+      <div id="collapseOne" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <div class="iframe-container mb-1">
+            <iframe src="https://www.youtube.com/embed/zJPK_2dke8A" 
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe> 
+          </div>
+          <!-- <div class="iframe-container">
+            <iframe src="https://www.youtube.com/embed/MSvFKWTAOIo" 
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+          </div> -->
+          <figcaption><i>"The tunnel"</i>, 3D <br> Download from <a href="https://villepajala.itch.io/the-tunnel">itch.io</a><br> 
+            See in <a href="https://github.com/VillePajala/The-Tunnel">GitHub.</a>
+          </figcaption> 
+        </div>
+      </div>
+    </div>
+
+    <div class="">
+      <div class="">
+        <img src="assets/img/games/iom.png"  data-toggle="collapse" data-target="#collapseTwo" class="img-fluid" id="music">
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <div class="iframe-container">
+            <iframe src="https://www.youtube.com/embed/77Y0aqixfug" 
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+          </div>
+          <figcaption><i>"Island Of Magick"</i>, 3D <br> Play: <a href="https://villepajala.itch.io/the-island-of-magick">itch.io</a><br> 
+            See in <a href="https://github.com/VillePajala/Island-of-Magick">GitHub.</a>
+          </figcaption>
+        </div>
+      </div>
+    </div>
+
+    <div class="">
+      <div class="">
+        <img src="assets/img/games/apple_hill_kill.jpg"  data-toggle="collapse" data-target="#collapseThree" class="img-fluid" id="music">
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <div class="iframe-container">
+            <iframe src="https://www.youtube.com/embed/4RdcjRlmqOU" 
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+          </div>
+          <figcaption><i>"Apple Hill Kill"</i>, 3D <br> Play: <a href="https://villepajala.itch.io/apple-hill-kill">itch.io</a><br> 
+            See in <a href="https://github.com/VillePajala/aPPLE-hILL-kILL">GitHub.</a>
+          </figcaption>
+        </div>
+      </div>
+    </div>
+
+    <div class="">
+      <div class="">
+        <img src="assets/img/games/agent_amazement.png"  data-toggle="collapse" data-target="#collapseFour" class="img-fluid" id="music">
+      </div>
+      <div id="collapseFour" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <div class="iframe-container">
+            <iframe src="https://www.youtube.com/embed/HqZQuZfbOGk" 
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+          </div>
+          <figcaption><i>"Agent Amazement"</i>, 2D <br> Play: <a href="https://villepajala.itch.io/agent-amazement-play-in-browser">itch.io</a><br> 
+            See in <a href="https://github.com/VillePajala/Agent-Amazement">GitHub.</a>
+          </figcaption>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+
+
+ <!--  <img src="assets/img/games/the_tunnel.png" (click)="showGame1()" class="img-fluid" id="music">
+
+  <div *ngIf="togglePanel1" id="gamePanel">
     <div class="iframe-container mb-1">
       <iframe src="https://www.youtube.com/embed/zJPK_2dke8A" 
       frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
@@ -64,6 +148,6 @@
     </figcaption>
   </div>
   
-</div>
+</div> -->
 
 

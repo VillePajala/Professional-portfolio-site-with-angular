@@ -79,9 +79,7 @@ font-family: 'Saira Semi Condensed', sans-serif;
     text-align: left;
     float: left;
 }
-#gameDiv {
-    
-}
+
 /* Nav */
 
 /* Links */
@@ -159,8 +157,7 @@ figcaption {
     box-shadow: 0 0 0 silver;
     transition: 0.5s;
 }
-#pointer:hover {
-    background-color: rgb(245, 245, 245); 
+#pointer:hover { 
     box-shadow: 0 2px 5px silver;
     transition: 0.5s;
 }

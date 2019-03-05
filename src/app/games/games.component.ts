@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { trigger, transition, state, animate, style, AnimationEvent } from '@angular/animations';
 
 @Component({
   selector: 'app-games',
@@ -12,7 +13,11 @@ export class GamesComponent implements OnInit {
   togglePanel3 : boolean = false;
   togglePanel4 : boolean = false;
 
+  
+
   constructor() { }
+
+ 
 
   showGame1 = () : void => {
     this.togglePanel1 = !this.togglePanel1;
@@ -29,6 +34,7 @@ export class GamesComponent implements OnInit {
   showGame4 = () : void => {
     this.togglePanel4 = !this.togglePanel4;
   }
+
 
   ngOnInit() {
   }

@@ -12,9 +12,8 @@ export class AppComponent {
   panelOpen : boolean = false;
   currentPage : string = "";
 
-  toggleNavbar() {
-    this.navbarOpen = !this.navbarOpen;
-  }
+  constructor() {}
+
 
   togglePanel() {
     this.panelOpen = !this.panelOpen;
@@ -22,8 +21,8 @@ export class AppComponent {
 
   setActivePage = (id) : void => {
     this.currentPage = id;
-    console.log(id);
   }
+
 
   data : object;
 
