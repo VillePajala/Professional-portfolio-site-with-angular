@@ -25,7 +25,7 @@ font-family: 'Saira Semi Condensed', sans-serif;
   animation-duration: 1s;
 }
 #leftColumn {
-    /* background: silver; */
+    transform: translate(20px);
 }
 #bodytext {
     max-width: 500px;  
@@ -123,6 +123,9 @@ h3 {
     font-family: 'Julius Sans One', sans-serif;
 }
 h4 {
+    font-family: 'Julius Sans One', sans-serif;
+}
+p {
     font-family: 'Julius Sans One', sans-serif;
 }
 h5 {
