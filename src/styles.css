@@ -22,11 +22,11 @@ font-family: 'Saira Semi Condensed', sans-serif;
     margin: auto;
     text-align: center;
     animation-name: drop;
-  animation-duration: 1s;
+    animation-duration: 1s;
 }
 #leftColumn {
-    transform: translate(20px);
-}
+/*     transform: translate(20px);
+ */}
 #bodytext {
     max-width: 500px;  
     text-align: justify;
@@ -146,7 +146,9 @@ figcaption {
 #profilepic {
     padding: 5px 0px;
 }
-
+#profilepic2 {
+    padding: 5px 0px;
+}
 #art {
     width: 500px;
     padding: 5px 0;
