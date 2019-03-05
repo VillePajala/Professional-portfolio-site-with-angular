@@ -12,10 +12,13 @@
       </div>
       <div id="collapseOne" class="collapse" data-parent="#accordion">
         <div class="card-body">
-          <div class="iframe-container mb-1">
-            
 
-          </div>
+            <h6>Front-End with Angular:</h6>
+            <p>Personal portfolio site</p>
+            <p>Currency Converter</p>
+            <p>Debt Calculator</p>
+            <p>Body Mass Index Calculator</p>
+            
         </div>
       </div>
     </div>
@@ -26,7 +29,15 @@
       </div>
       <div id="collapseTwo" class="collapse" data-parent="#accordion">
         <div class="card-body">
-          
+
+          <h6>Back-End with Node.js:</h6>
+          <p>User Data Manager (REST API)</p>
+          <p>User access Manager</p>
+          <p>Simple Blog Writer</p>
+          <p>Movie data search engine (API)</p>
+          <p>News Aggregator (RSS)</p>
+          <p>Internship options notebook</p>
+          <p>Pedometer data visualizer</p>
 
         </div>
       </div>
@@ -38,7 +49,10 @@
       </div>
       <div id="collapseThree" class="collapse" data-parent="#accordion">
         <div class="card-body">
-          
+
+            <h6 (click)="showPanel('mobile')" class="pointer">Mobile (hybrid) with Ionic:</h6>
+            <p>News aggregator (API)</p>
+            <p>Weather app (API)</p>
 
         </div>
       </div>
@@ -51,85 +65,34 @@
       <div id="collapseFour" class="collapse" data-parent="#accordion">
         <div class="card-body">
           
-          
+            <h6>Games with Unity3D and c#:</h6>
+            <p>The tunnel</p>
+            <p>The Island of Magick</p>
+            <p>Apple Hill Kill</p>
+            <p>Agent Amazement</p>
+            <p>Piller Roller</p>
+
         </div>
       </div>
     </div>
+
+    <div class="">
+        <div class="mb-2">
+          <img src="assets/img/dev/other.png"  data-toggle="collapse" data-target="#collapseFour" class="img-fluid" id="codeBanner">
+        </div>
+        <div id="collapseFour" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            
+            <h6>Other:</h6>
+            <p>Taxi fare calculator (PHP, JavaScript)</p>
+            <p>Weather app (PHP, JavaScript)</p>
+    
+          </div>
+        </div>
+      </div>
     
   </div>
 
-  
-
-  <h5>Selected applications that I have programmed:</h5>
-
-  <br>
-
-  <div class="card mb-2" id="pointer">
-
-    <h6 (click)="showPanel('angular')" class="pointer">Front-End with Angular:</h6>
-
-    <div *ngIf="category =='angular'">
-      <p>Personal portfolio site</p>
-      <p>Currency Converter</p>
-      <p>Debt Calculator</p>
-      <p>Body Mass Index Calculator</p>
-    </div>
-      
-  </div>
-
-  <div class="card  mb-2" id="pointer">
-
-    <h6 (click)="showPanel('node')">Back-End with Node.js:</h6>
-
-    <div *ngIf="category =='node'">
-      <p>User Data Manager (REST API)</p>
-      <p>User access Manager</p>
-      <p>Simple Blog Writer</p>
-      <p>Movie data search engine (API)</p>
-      <p>News Aggregator (RSS)</p>
-      <p>Internship options notebook</p>
-      <p>Pedometer data visualizer</p>
-    </div>
-      
-  </div>
-
-  <div class="card mb-2" id="pointer">
-
-    <h6 (click)="showPanel('mobile')" class="pointer">Mobile (hybrid) with Ionic:</h6>
-
-    <div *ngIf="category =='mobile'">
-      <p>News aggregator (API)</p>
-      <p>Weather app (API)</p>
-    </div>   
-  </div>
-      
-
-  <div class="card mb-2" id="pointer">
-
-    <h6 (click)="showPanel('games')" class="pointer">Games with Unity3D and c#:</h6>
-
-    <div *ngIf="category =='games'">
-      <p>The tunnel</p>
-      <p>The Island of Magick</p>
-      <p>Apple Hill Kill</p>
-      <p>Agent Amazement</p>
-      <p>Piller Roller</p>
-    </div>  
-  </div>
-
-
-  <div class="card mb-2"  id="pointer">
-
-    <h6 (click)="showPanel('other')">Other:</h6>
-
-    <div *ngIf="category =='other'">
-      <p>Taxi fare calculator (PHP, JavaScript)</p>
-      <p>Weather app (PHP, JavaScript)</p>
-    </div>   
-  </div>
-      
-
-     
   
   <!-- <div class="card">
     <a href="https://github.com/VillePajala" target="_blank">My Public GitHub</a>
@@ -141,3 +104,7 @@
 
 
 </div>
+
+
+
+
