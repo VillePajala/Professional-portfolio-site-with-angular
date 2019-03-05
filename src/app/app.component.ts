@@ -8,16 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  navbarOpen : boolean = false;
-  panelOpen : boolean = false;
   currentPage : string = "";
 
   constructor() {}
 
-
-  togglePanel() {
-    this.panelOpen = !this.panelOpen;
-  }
 
   setActivePage = (id) : void => {
     this.currentPage = id;

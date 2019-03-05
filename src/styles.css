@@ -80,6 +80,7 @@ font-family: 'Saira Semi Condensed', sans-serif;
     float: left;
 }
 
+
 /* Nav */
 
 /* Links */
@@ -151,6 +152,12 @@ figcaption {
     cursor: pointer;
     width: 100%;
     padding: 5px 0;
+}
+#codeBanner {
+    cursor: pointer;
+    width: 100%;
+    
+    border: 1px solid silver;
 }
 #pointer {
     cursor: pointer;
