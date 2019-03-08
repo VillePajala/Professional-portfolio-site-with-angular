@@ -10,6 +10,7 @@ A professional portfolio to showcase some of the things that I have done over th
 * HTML
 * CSS
 * Bootstrap 4
+* Heroku
 
 ## Technical details
 
