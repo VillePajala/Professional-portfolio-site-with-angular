@@ -1,6 +1,17 @@
 # Portfolio of Ville Pajala
 
-This is a professional portfolio I'm building formyself to showcase some of the things that I have done over the years. It is still under construction and will propably be developed for a long time. You can visit the the site at https://villepajala.herokuapp.com/ (Proper domain will be added later.
+A professional portfolio to showcase some of the things that I have done over the years. Site is still under development but you can check how it looks like currently https://villepajala.herokuapp.com/.
+
+## Tech Used
+
+* Angular 7
+* TypeScript
+* JavaScript Es6
+* HTML
+* CSS
+* Bootstrap 4
+
+## Technical details
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
 
