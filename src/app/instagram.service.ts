@@ -14,11 +14,11 @@ export class InstagramService {
     
    }
 
-  herokuApiKey : string = process.env.INSTAGRAM_APIKEY;
+  herokuApiKey = process.env.INSTAGRAM_APIKEY;
   /* localApiKey: string = this.token.apiKey */;
 
   information : object = [];  
-  private apiUrl : string = `https://api.instagram.com/v1/users/self/media/recent/?access_token=${process.env.INSTAGRAM_APIKEY}`;
+  private apiUrl : string = `https://api.instagram.com/v1/users/self/media/recent/?access_token=${this.herokuApiKey}`;
 
   getFeed = () : any => {
 
