@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor(private instagram : InstagramService) { }
+  constructor(public instagram : InstagramService) { }
 
   ngOnInit() {
   }
