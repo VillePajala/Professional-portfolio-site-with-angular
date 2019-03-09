@@ -14,7 +14,7 @@ export class InstagramService {
    }
 
   information : object = [];  
-  private apiUrl : string = `https://api.instagram.com/v1/users/self/media/recent/?access_token=${this.token.apiKey}`;
+  private apiUrl : string = `https://api.instagram.com/v1/users/self/media/recent/?access_token=${process.env.INSTAGRAM_APIKEY}`;
 
   getFeed = () : any => {
 
