@@ -8,10 +8,14 @@ import { HttpClient } from '@angular/common/http';
 export class InstagramService {
 
   apiKey : string;
+  
 
-  constructor(private http : HttpClient, private token : ApiService) {
+  constructor(private http : HttpClient/* , private token : ApiService */) {
     
    }
+
+  herokuApiKey : string = process.env.INSTAGRAM_APIKEY;
+  /* localApiKey: string = this.token.apiKey */;
 
   information : object = [];  
   private apiUrl : string = `https://api.instagram.com/v1/users/self/media/recent/?access_token=${process.env.INSTAGRAM_APIKEY}`;
