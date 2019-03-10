@@ -1,22 +1,19 @@
 <div class="container" id="rightColumn">
 
-  <div class="container" id="pageHeader">
+  <!-- <div class="container" id="pageHeader">
     <h2>About</h2>
-  </div>
+  </div> -->
 
-  <button class="btn btn-block btn-primary" (click)="instagram.getFeed()">Instagram</button>
-  <div class="iframe-container mb-4">
-      <iframe src="https://www.youtube.com/embed/8F7zY-RI8AA" 
-      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen></iframe> 
-  </div>
-  <!-- <img src="assets/img/ville.png" class="img-fluid" id="art"> -->
-  <!-- <img src="assets/img/wordcloud.svg" class="img-fluid" id="profilepic"> -->
+  <div class="container" >
 
-  <div class="container" id="bodytext">
-
-<!--     {{ instagram.information[0].filter }}
- -->
+    <div class="row" id="instagramPostWrapper" *ngIf="instagram.information" >      
+      <div class="col-3" id="instagramPostWrapper2" *ngFor="let object of instagram.information">
+          <!-- <span class="helper"></span>  --> 
+          <img src="{{ object.images.standard_resolution.url }}" id="instagramPost">
+      </div>
+    </div>
+     
+ 
     <div class="row">
 
       <div class="col-12" style="text-align: center; color: red">

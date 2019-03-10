@@ -1,4 +1,4 @@
-/* import { ApiService } from './api.service'; */
+/* import { ApiService } from './api.service'; */ // remove from deployment
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
@@ -11,21 +11,21 @@ export class InstagramService {
   apiKey : string;
   
 
-  constructor(private http : HttpClient/* , private token : ApiService */) {
-    
+  constructor(private http : HttpClient/* , private token : ApiService */) {    // Remove token from production
+    this.getFeed();
    }
 
-  herokuApiKey = process.env.INSTAGRAM_APIKEY;
-  /* localApiKey: string = this.token.apiKey */;
+  herokuApiKey = process.env.INSTAGRAM_APIKEY;    // Release in production
+  /* localApiKey: string = this.token.apiKey; */  // Remove from production
 
-  information : object = [];  
+  information : object;  
   private apiUrl : string = `https://api.instagram.com/v1/users/self/media/recent/?access_token=${this.herokuApiKey}`;
 
   getFeed = () : any => {
 
     this.http.get(this.apiUrl).subscribe((data : any) => {
       this.information = data.data;
-
+      console.log(this.information)
     },
     (err : any) => {
       console.log(err);

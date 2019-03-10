@@ -18,7 +18,7 @@ font-family: 'Saira Semi Condensed', sans-serif;
 }
 #rightColumn {
     min-height: 1200px;
-    max-width: 500px;
+    max-width: 800px;
     margin: auto;
     text-align: center;
     animation-name: drop;
@@ -99,6 +99,7 @@ font-family: 'Saira Semi Condensed', sans-serif;
 
 /* Links */
 a h6{
+    padding: 8px;
     color:gray;
     text-decoration: none;
     transition: 4s;
@@ -154,6 +155,32 @@ figcaption {
     font-size: 13px;
     font-family: 'Julius Sans One', sans-serif;
     padding-bottom: 20px;
+}
+#instagramPost {
+    height: 220px; 
+    overflow: hidden;
+    padding: 0;
+    background-color: black;
+    transform: translate(-15px, -15px)
+}
+#instagramPostWrapper {
+    border: solid 2px white;
+    text-align: center;
+    padding: 0;
+    box-shadow: 0 2px 15px silver;
+}
+#instagramPostWrapper2 {
+    border: solid 1px white;
+    max-height: 140px; 
+    overflow: hidden; 
+    text-align: center; 
+    padding: 0; 
+    background-color: silver;
+}
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
 /* Images */
