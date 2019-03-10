@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  INSTAGRAM_APIKEY: "387483296.c84df52.6c0601f248454064a294b27b86ca6f71"
+  
 };
 
 /*

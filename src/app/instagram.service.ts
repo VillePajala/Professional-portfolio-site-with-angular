@@ -25,7 +25,8 @@ export class InstagramService {
 
     this.http.get(this.apiUrl).subscribe((data : any) => {
       this.information = data.data;
-      console.log(this.information)
+      console.log(this.apiUrl)
+      console.log(this.herokuApiKey)
     },
     (err : any) => {
       console.log(err);
