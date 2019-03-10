@@ -12,7 +12,7 @@ export class InstagramService {
   
 
   constructor(private http : HttpClient/* , private token : ApiService */) {    // Remove token from production
-    this.getFeed();
+    /* this.getFeed(); */
    }
 
   /* herokuApiKey = process.env.INSTAGRAM_APIKEY;  */   // Release in production
