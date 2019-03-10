@@ -18,7 +18,7 @@ export class InstagramService {
   /* herokuApiKey = process.env.INSTAGRAM_APIKEY;  */   // Release in production
   /* localApiKey: string = this.token.apiKey; */  // Remove from production
 
-  information : object;  
+  /* information : object;  
   private apiUrl : string = `https://api.instagram.com/v1/users/self/media/recent/?access_token=${}`;
 
   getFeed = () : any => {
@@ -31,6 +31,6 @@ export class InstagramService {
     (err : any) => {
       console.log(err);
     });
-  }
+  } */
   
 }
