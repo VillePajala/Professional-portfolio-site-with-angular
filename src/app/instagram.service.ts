@@ -15,7 +15,7 @@ export class InstagramService {
     this.getFeed();
    }
 
-  herokuApiKey = process.env.INSTAGRAM_APIKEY;    // Release in production
+  /* herokuApiKey = process.env.INSTAGRAM_APIKEY;  */   // Release in production
   /* localApiKey: string = this.token.apiKey; */  // Remove from production
 
   information : object;  
