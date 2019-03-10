@@ -19,7 +19,7 @@ export class InstagramService {
   /* localApiKey: string = this.token.apiKey; */  // Remove from production
 
   information : object;  
-  private apiUrl : string = `https://api.instagram.com/v1/users/self/media/recent/?access_token=${this.herokuApiKey}`;
+  private apiUrl : string = `https://api.instagram.com/v1/users/self/media/recent/?access_token=${}`;
 
   getFeed = () : any => {
 
