@@ -19,7 +19,7 @@
               <span style="font-size: 15px" class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul class="navbar-nav">
+              <ul class="navbar-nav"><br>
                 <li class="nav-item" data-toggle="collapse" data-target="#collapsibleNavbar">
                   <a class="nav-link" routerLink="art"><h6>Art</h6></a>
                 </li>
@@ -68,31 +68,31 @@
 
 
 
-          <div style="text-align:right" class="container d-none d-md-block"><br><br>
-            <a routerLink="art" (click)="setActivePage('art')"><h5 class="mt-5"> 
-              <i *ngIf="currentPage == 'art'" class="fas fa-check" id="activePageIcon"></i>Art </h5>
+          <div style="text-align:right; transform: translate(-50px, 0);" class="container d-none d-md-block"><br><br>
+            <a routerLink="art" (click)="setActivePage('art')"><h6 class="mt-5"> 
+              <i *ngIf="currentPage == 'art'" class="fas fa-check" id="activePageIcon"></i>Art </h6>
             </a>     
-            <a routerLink="music" (click)="setActivePage('music')"><h5 class="mt-3"> 
-              <i *ngIf="currentPage == 'music'" class="fas fa-check" id="activePageIcon"></i>Music </h5>
+            <a routerLink="music" (click)="setActivePage('music')"><h6 class="mt-3"> 
+              <i *ngIf="currentPage == 'music'" class="fas fa-check" id="activePageIcon"></i>Music </h6>
             </a>
-            <a routerLink="design" (click)="setActivePage('design')"><h5 class="mt-3"> 
-              <i *ngIf="currentPage == 'design'" class="fas fa-check" id="activePageIcon"></i>Design </h5>
+            <a routerLink="design" (click)="setActivePage('design')"><h6 class="mt-3"> 
+              <i *ngIf="currentPage == 'design'" class="fas fa-check" id="activePageIcon"></i>Design </h6>
             </a>
-            <a routerLink="games" (click)="setActivePage('games')"><h5 class="mt-3"> 
-              <i *ngIf="currentPage == 'games'" class="fas fa-check" id="activePageIcon"></i>Games </h5>
+            <a routerLink="games" (click)="setActivePage('games')"><h6 class="mt-3"> 
+              <i *ngIf="currentPage == 'games'" class="fas fa-check" id="activePageIcon"></i>Games </h6>
             </a>
-            <a routerLink="dev" (click)="setActivePage('dev')"><h5 class="mt-3"> 
-              <i *ngIf="currentPage == 'dev'" class="fas fa-check" id="activePageIcon"></i>Code </h5>
+            <a routerLink="dev" (click)="setActivePage('dev')"><h6 class="mt-3"> 
+              <i *ngIf="currentPage == 'dev'" class="fas fa-check" id="activePageIcon"></i>Code </h6>
             </a>
-            <a routerLink="curriculum" (click)="setActivePage('curriculum')"><h5 class="mt-3"> 
-              <i *ngIf="currentPage == 'curriculum'" class="fas fa-check" id="activePageIcon"></i>CV </h5>
+            <a routerLink="curriculum" (click)="setActivePage('curriculum')"><h6 class="mt-3"> 
+              <i *ngIf="currentPage == 'curriculum'" class="fas fa-check" id="activePageIcon"></i>CV </h6>
             </a>
-            <a routerLink="contact" (click)="setActivePage('contact')"><h5 class="mt-3"> 
-              <i *ngIf="currentPage == 'contact'" class="fas fa-check" id="activePageIcon"></i>Contact </h5>
+            <a routerLink="contact" (click)="setActivePage('contact')"><h6 class="mt-3"> 
+              <i *ngIf="currentPage == 'contact'" class="fas fa-check" id="activePageIcon"></i>Contact </h6>
             </a>         
           </div>  
 
-          <div class="container d-none d-md-block" id="socialMediaButton">
+          <div style="text-align:right; transform: translate(-50px, 0); padding-right: 25px" class="container d-none d-md-block" id="socialMediaButton">
             <br><br><br><br>
             <span id="socialMediaButton">
               <a href="https://github.com/VillePajala" target="_blank"><i class="fab fa-github"></i></a>

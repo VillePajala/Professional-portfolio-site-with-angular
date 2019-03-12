@@ -17,7 +17,7 @@ font-family: 'Saira Semi Condensed', sans-serif;
     padding: 30px;
 }
 #rightColumn {
-    
+    padding-right: 50px;
     min-height: 1200px;
     max-width: 800px;
     margin: auto;
@@ -99,13 +99,13 @@ font-family: 'Saira Semi Condensed', sans-serif;
 /* Nav */
 
 /* Links */
-a h5{
+a h6{
     padding: 8px;
     color:gray;
     text-decoration: none;
     transition: 4s;
 }
-a h5:hover{
+a h6:hover{
     padding: 8px 20px;
     color:black;
     background-color: rgb(245, 245, 245);
