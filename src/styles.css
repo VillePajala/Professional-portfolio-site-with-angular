@@ -17,7 +17,6 @@ font-family: 'Saira Semi Condensed', sans-serif;
     padding: 30px;
 }
 #rightColumn {
-    padding-right: 50px;
     min-height: 1200px;
     max-width: 800px;
     margin: auto;
@@ -26,8 +25,7 @@ font-family: 'Saira Semi Condensed', sans-serif;
     animation-duration: 1s;
 }
 #leftColumn {
-/*     transform: translate(20px);
- */}
+}
 #bodytext {
     max-width: 500px;  
     text-align: justify;
@@ -41,12 +39,9 @@ font-family: 'Saira Semi Condensed', sans-serif;
 #pageHeader {
     padding: 15px 0;
     margin-bottom: 10px;
-    /* height: 90px; */
     max-width: 500px;
-    /* border-bottom: 1px solid silver; */
 }
 #siteHeader {
-    /* box-shadow: 0 1px 10px silver; */
     text-align: center;
     margin: auto;
     padding: 30px;
@@ -83,16 +78,34 @@ font-family: 'Saira Semi Condensed', sans-serif;
 #devItem {
     box-shadow: 0 2px 15px rgb(230, 228, 228);
 }
-#devItem p { 
-    padding: 0 15px;
-    text-align: center;
-    font-size: 13px;
+#textIndent {
+    text-align: left; 
+    margin: 0px;
+    padding: 10px 20px;
+    font-size: 12px;
     font-family: 'Saira', sans-serif;
 }
+#textIndent2 {
+    text-align: center; 
+    margin: 0px;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-family: 'Saira', sans-serif;
+}
+#devItem 
+#devItem p { 
+    padding: 10px 20px;
+    font-size: 12px;
+    font-family: 'Saira', sans-serif;
+}
+#devItem h5 { 
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 16px;
+}
 #devText {
-    border-left: solid 3px Silver;
-    border-right: solid 3px Silver;
-    margin: 10px 20px;
+    border-left: none;
+    border-right: none;
 }
 
 
@@ -255,6 +268,7 @@ figcaption {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 576px) {
+
     #rightColumn {
         padding-top: 15px;
         margin-top: 5px;
@@ -267,9 +281,13 @@ figcaption {
   
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 576px) {
+    
     #rightColumn {
         padding-top: 15px;
         margin-top: 0;
+    }
+    #devText {
+        margin: 10px 45px;
     }
     #profilepic {
         
@@ -281,8 +299,31 @@ figcaption {
 @media only screen and (min-width: 768px) {
 
     #rightColumn {
+        padding-right: 40px;
         padding-top: 20px;
         margin-top: 10px;
+    }
+    #textIndent {
+        text-align: left; 
+        margin: 0px 0px;
+    }
+    #textIndent2 {
+        text-align: center; 
+        margin: 0px;
+    }
+    #devItem p { 
+        font-size: 13px;
+        padding: 10px 55px;
+    }
+    #devItem h5 { 
+        text-align: center;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    #devText {
+        border-left: solid 3px Silver;
+        border-right: solid 3px Silver;
+        margin: 10px 25px;
     }
     #profilepic {
         padding: 20px 30px;
@@ -294,6 +335,10 @@ figcaption {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     
+    #textIndent {
+        text-align: left; 
+        margin: 0px 30px;
+    }
     #profilepic {
         padding: 30px 80px;
     }
