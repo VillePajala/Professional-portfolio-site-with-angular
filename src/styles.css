@@ -32,9 +32,8 @@ font-family: 'Saira Semi Condensed', sans-serif;
     margin-top: 20px;
 }
 #cvcard {
-    padding: 20px;
+    padding: 15px 30px;
     text-align: left;
-    box-shadow: 0 2px 10px rgb(238, 237, 237);
 }
 #pageHeader {
     padding: 15px 0;
@@ -77,6 +76,7 @@ font-family: 'Saira Semi Condensed', sans-serif;
 }
 #devItem {
     box-shadow: 0 2px 15px rgb(230, 228, 228);
+    padding: 30px 30px 40px 30px;
 }
 #textIndent {
     text-align: left; 
@@ -92,7 +92,6 @@ font-family: 'Saira Semi Condensed', sans-serif;
     font-size: 12px;
     font-family: 'Saira', sans-serif;
 }
-#devItem 
 #devItem p { 
     padding: 10px 20px;
     font-size: 12px;
@@ -106,6 +105,9 @@ font-family: 'Saira Semi Condensed', sans-serif;
 #devText {
     border-left: none;
     border-right: none;
+}
+#curriculumHeader {
+    box-shadow: 0 2px 15px rgb(224, 224, 224);
 }
 
 
@@ -210,7 +212,6 @@ figcaption {
 }
 #dev {
     border: solid 2px white;
-    width: 500px;
     padding: 0px 0;
     box-shadow: 0 2px 15px rgb(240, 240, 240);
 }
@@ -321,8 +322,8 @@ figcaption {
         font-size: 16px;
     }
     #devText {
-        border-left: solid 3px Silver;
-        border-right: solid 3px Silver;
+        border-left: solid 3px rgb(224, 220, 220);
+        border-right: solid 3px rgb(224, 220, 220);
         margin: 10px 25px;
     }
     #profilepic {
