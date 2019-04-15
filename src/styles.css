@@ -26,7 +26,7 @@ font-family: 'Saira Semi Condensed', sans-serif;
     padding-bottom: 150px;
 }
 #leftColumn {
-    padding-left: 100px;
+    padding-left: 0px;
 }
 #bodytext {
     max-width: 500px;  
@@ -49,7 +49,12 @@ font-family: 'Saira Semi Condensed', sans-serif;
     color: black;
     font-size: 50px;
     height: 105px;
+    text-shadow: 0px 0px 0px gray;
     border-bottom: 1px solid rgb(233, 233, 233);
+}
+#siteHeader h1:hover {
+    letter-spacing: 10px;
+    transition: 1s;
 }
 #introText {
     padding: 15px 30px;
@@ -64,12 +69,20 @@ font-family: 'Saira Semi Condensed', sans-serif;
     font-size: 15px; 
     color: gray;
 }
+
 #activePageIcon {
     text-align: left;
     padding-left: 10px;
     font-size: 13px; 
     color: silver;
     transform: translate(-20px,0px);
+}
+.fab {
+    transition: 4s;
+}
+.fab:hover {
+    transform: scale(1.6);
+    transition: 0.5s;
 }
 #info {
     width: 800px;
@@ -135,6 +148,7 @@ a h6:hover{
 }
 a h1 {
     text-decoration: none;
+    transition: 16s;
 }
 a {
     color:gray;
@@ -306,8 +320,8 @@ figcaption {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-    #frame {
-        
+    #leftColumn {
+        padding-left: 50px;
     }
     #rightColumn {
         padding-right: 40px;
@@ -346,6 +360,9 @@ figcaption {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     
+    #leftColumn {
+        padding-left: 80px;
+    }
     #textIndent {
         text-align: left; 
         margin: 0px 30px;
@@ -359,6 +376,7 @@ figcaption {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
+    
     #profilepic {
         padding: 30px 80px;
     }
