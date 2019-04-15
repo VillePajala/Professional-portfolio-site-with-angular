@@ -23,6 +23,7 @@ font-family: 'Saira Semi Condensed', sans-serif;
     text-align: center;
     animation-name: drop;
     animation-duration: 1s;
+    padding-bottom: 150px;
 }
 #leftColumn {
 }
@@ -170,7 +171,7 @@ h6 {
 figcaption {
     font-size: 13px;
     font-family: 'Julius Sans One', sans-serif;
-    padding-bottom: 20px;
+    padding: 10px 0px 10px 0px;
 }
 #instagramPost {
     height: 220px; 
@@ -301,6 +302,9 @@ figcaption {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
+    #frame {
+        
+    }
     #rightColumn {
         padding-right: 40px;
         padding-top: 20px;
