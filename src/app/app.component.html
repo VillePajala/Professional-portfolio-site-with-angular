@@ -10,7 +10,7 @@
       <div class="container mt-3" id="header">
         <div style="text-align:center">
           <nav style="text-align:center" class="d-block d-md-none navbar navbar-expand-md bg-white navbar-light">
-            <a class="navbar-brand" routerLink="">
+            <a class="navbar-brand">
               <h3 >
                 Ville Johannes Pajala
               </h3>
@@ -20,6 +20,9 @@
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
               <ul class="navbar-nav"><br>
+                <li class="nav-item" data-toggle="collapse" data-target="#collapsibleNavbar">
+                  <a class="nav-link" routerLink=""><h6>home</h6></a>
+                </li>
                 <li class="nav-item" data-toggle="collapse" data-target="#collapsibleNavbar">
                   <a class="nav-link" routerLink="art"><h6>Art</h6></a>
                 </li>
@@ -36,7 +39,7 @@
                   <a class="nav-link" routerLink="dev"><h6>Code</h6></a>
                 </li>
                 <li class="nav-item" data-toggle="collapse" data-target="#collapsibleNavbar">
-                  <a class="nav-link" routerLink="curriculum"><h6>CV</h6></a>
+                  <a class="nav-link" routerLink="curriculum"><h6>ABOUT ME</h6></a>
                 </li>
                 <li class="nav-item" data-toggle="collapse" data-target="#collapsibleNavbar">
                   <a class="nav-link" routerLink="contact"><h6>Contact</h6></a>
@@ -85,7 +88,7 @@
               <i *ngIf="currentPage == 'dev'" class="fas fa-check" id="activePageIcon"></i>Code </h6>
             </a>
             <a routerLink="curriculum" (click)="setActivePage('curriculum')"><h6 class="mt-3"> 
-              <i *ngIf="currentPage == 'curriculum'" class="fas fa-check" id="activePageIcon"></i>CV </h6>
+              <i *ngIf="currentPage == 'curriculum'" class="fas fa-check" id="activePageIcon"></i>ABOUT ME</h6>
             </a>
             <a routerLink="contact" (click)="setActivePage('contact')"><h6 class="mt-3"> 
               <i *ngIf="currentPage == 'contact'" class="fas fa-check" id="activePageIcon"></i>Contact </h6>

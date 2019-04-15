@@ -26,6 +26,7 @@ font-family: 'Saira Semi Condensed', sans-serif;
     padding-bottom: 150px;
 }
 #leftColumn {
+    padding-left: 100px;
 }
 #bodytext {
     max-width: 500px;  
@@ -98,6 +99,10 @@ font-family: 'Saira Semi Condensed', sans-serif;
     font-size: 12px;
     font-family: 'Saira', sans-serif;
 }
+#curriculum p {
+    font-size: 12px;
+    
+}
 #devItem h5 { 
     text-align: center;
     padding: 10px 10px;
@@ -108,7 +113,7 @@ font-family: 'Saira Semi Condensed', sans-serif;
     border-right: none;
 }
 #curriculumHeader {
-    box-shadow: 0 2px 15px rgb(224, 224, 224);
+    border: 1px solid silver;
 }
 
 
@@ -226,7 +231,6 @@ figcaption {
 #codeBanner {
     cursor: pointer;
     width: 100%;
-    
     border: 1px solid silver;
 }
 #pointer {
