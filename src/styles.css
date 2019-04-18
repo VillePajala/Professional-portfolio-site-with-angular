@@ -227,7 +227,7 @@ figcaption {
     padding: 5px 0px;
 }
 #profilepic3 {
-    padding: 0px 120px 0px 120px;
+    padding: 0px 40px 0px 40px;
 }
 #art { 
     
@@ -314,6 +314,9 @@ figcaption {
     #profilepic {
         
     }
+    #profilepic3 {
+        padding: 0px 100px 0px 100px;
+    }
     
 }
   
@@ -353,6 +356,9 @@ figcaption {
     #profilepic {
         padding: 20px 30px;
     }
+    #profilepic3 {
+        padding: 0px 60px 0px 60px;
+    }
 
 }
 
@@ -369,6 +375,9 @@ figcaption {
     }
     #profilepic {
         padding: 30px 80px;
+    }
+    #profilepic3 {
+        padding: 0px 120px 0px 120px;
     }
 
 }
