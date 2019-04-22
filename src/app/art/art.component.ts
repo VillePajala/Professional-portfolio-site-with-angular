@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArtComponent implements OnInit {
 
-  pictureData : object;
 
   constructor() { }
 
