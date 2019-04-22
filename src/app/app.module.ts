@@ -62,9 +62,7 @@ const routes : Routes = [
     GamesComponent,
     DevComponent,
     CurriculumComponent,
-    ContactComponent,
-    CvComponent,
-    CodeComponent
+    ContactComponent
   ],
   imports: [
     BrowserModule,
