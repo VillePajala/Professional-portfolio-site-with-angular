@@ -14,8 +14,7 @@ import { GamesComponent } from './games/games.component';
 import { DevComponent } from './dev/dev.component';
 import { CurriculumComponent } from './curriculum/curriculum.component';
 import { ContactComponent } from './contact/contact.component';
-import { CvComponent } from './cv/cv.component';
-import { CodeComponent } from './code/code.component';
+
 
 const routes : Routes = [
                       {
