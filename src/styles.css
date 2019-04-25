@@ -42,6 +42,9 @@ font-family: 'Saira Semi Condensed', sans-serif;
     margin-bottom: 10px;
     max-width: 500px;
 }
+#smallScreenHeader {
+
+}
 #siteHeader {
     text-align: center;
     margin: auto;
@@ -124,6 +127,9 @@ font-family: 'Saira Semi Condensed', sans-serif;
 #devText {
     border-left: none;
     border-right: none;
+}
+#introduction {
+    padding: 0px 60px 
 }
 #curriculumHeader {
     border: 1px solid silver;
@@ -297,6 +303,9 @@ figcaption {
     }
     h2 {
 
+    }
+    #smallScreenHeader {
+        transform: translate(7px, 0px);
     }
  
 }
