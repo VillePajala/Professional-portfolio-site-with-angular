@@ -1,6 +1,6 @@
 # Portfolio of Ville Pajala
 
-A professional portfolio to showcase some of the things that I have done over the years. Site is still under development but you can check how it looks like currently https://villepajala.herokuapp.com/.
+A professional portfolio to showcase some of the things that I have done over the years. Site is now live at www.villepajala.com
 
 ## Tech Used
 
