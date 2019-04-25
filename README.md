@@ -2,6 +2,15 @@
 
 A professional portfolio to showcase some of the things that I have done over the years. Site is now live at www.villepajala.com
 
+## features:
+
+* Fully Responsive - optimized for different screen sizes
+* Animated menus
+* Animated page load
+* Menu shows active page with an icon
+* some page's content is displayed as an accordion for easier navigation
+* Continuous integration set up with GitHub and Heroku
+
 ## Tech Used
 
 * Angular 7
