@@ -19,7 +19,7 @@
   "dependencies": {
     "@angular-devkit/build-angular": "^0.12.4",
     "@angular/animations": "^7.2.6",
-    "@angular/cli": "^7.3.3",
+    "@angular/cli": "^14.2.3",
     "@angular/common": "^7.2.6",
     "@angular/compiler": "^7.2.6",
     "@angular/compiler-cli": "^7.2.6",
@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.12.4",
-    "@angular/cli": "^7.3.3",
+    "@angular/cli": "^14.2.3",
     "@angular/compiler-cli": "^7.2.6",
     "@angular/language-service": "^7.2.6",
     "@types/jasmine": "~2.8.8",
