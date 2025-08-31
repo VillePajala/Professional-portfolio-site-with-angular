@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http'
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http'
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
@@ -52,26 +52,19 @@ const routes : Routes = [
 
 ]
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    ArtComponent,
-    AboutComponent,
-    MusicComponent,
-    DesignComponent,
-    GamesComponent,
-    DevComponent,
-    CurriculumComponent,
-    ContactComponent
-  ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    FormsModule,
-    HttpClientModule,
-    RouterModule.forRoot(routes)
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        ArtComponent,
+        AboutComponent,
+        MusicComponent,
+        DesignComponent,
+        GamesComponent,
+        DevComponent,
+        CurriculumComponent,
+        ContactComponent
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        BrowserAnimationsModule,
+        FormsModule,
+        RouterModule.forRoot(routes, {})], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }
