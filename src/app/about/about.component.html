@@ -1,26 +1,512 @@
-<div class="container" id="rightColumn">
-
-  <div class="container" id="pageHeader">
-    <h2>WELCOME!</h2>
+<!-- Hero Section -->
+<section id="hero" class="hero-section">
+  <div class="container-fluid">
+    <div class="row align-items-center min-vh-100">
+      <div class="col-lg-6 order-2 order-lg-1">
+        <div class="hero-content">
+          <div class="hero-badge mb-3 d-flex gap-2 flex-wrap">
+            <span class="badge bg-primary">Indie Maker</span>
+            <span class="badge bg-secondary">Building MatchOps</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="text-primary">Indie product builder</span><br>
+            I build and ship my own software
+          </h1>
+          <h2 class="hero-subtitle">Ville Johannes Pajala</h2>
+          <p class="hero-description lead">
+            I design, build, and ship products end to end. My flagship is
+            <strong>MatchOps</strong> — a local-first soccer &amp; futsal coaching app
+            (Next.js, React, Supabase, PWA) with 4,500+ tests. Day job: AI &amp; Automation
+            consultant, currently at CGI. Background in visual art and Chinese medicine —
+            so I sweat how things feel, not just whether they run.
+          </p>
+          <div class="hero-cta mt-4 d-flex flex-column flex-md-row">
+            <a href="#featured" class="btn btn-primary btn-lg me-md-3 mb-2 mb-md-0">See MatchOps</a>
+            <a href="#contact" class="btn btn-outline-primary btn-lg">Get in touch</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2">
+        <div class="hero-image text-center">
+          <img src="assets/img/profilepic2.png" alt="Ville Pajala" class="img-fluid hero-profile" loading="eager" width="400" height="400">
+        </div>
+      </div>
+    </div>
   </div>
+</section>
 
+<!-- About Section -->
+<section id="about" class="about-section py-5">
   <div class="container">
-    <img src="assets/img/profilepic.png" class="img-fluid" id="profilepic3">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <div class="section-header text-center mb-5">
+          <h2>About</h2>
+          <p class="section-subtitle">A maker who ships his own products — backed by years of automation and AI in production.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="about-card">
+              <div class="about-icon mb-3">
+                <i class="fas fa-rocket text-primary"></i>
+              </div>
+              <h4>Ship My Own Products</h4>
+              <p>I take ideas all the way to production. MatchOps is a real, installable app with thousands of tests — not a demo.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="about-card">
+              <div class="about-icon mb-3">
+                <i class="fas fa-robot text-primary"></i>
+              </div>
+              <h4>AI &amp; Automation Consultant</h4>
+              <p>AI &amp; Automation consultant, currently at CGI. 6+ years across RPA and intelligent automation. Azure AI certified — I know how systems behave in production.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="about-card">
+              <div class="about-icon mb-3">
+                <i class="fas fa-code text-primary"></i>
+              </div>
+              <h4>Full-Stack, AI-Assisted</h4>
+              <p>Next.js, React, Supabase, Python, PWA — built fast with AI-coding tools and shipped to real users.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="about-card">
+              <div class="about-icon mb-3">
+                <i class="fas fa-palette text-primary"></i>
+              </div>
+              <h4>Design &amp; Craft</h4>
+              <p>Two decades as a visual artist. I care how a product looks and feels, not just whether the code compiles.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+</section>
 
-  <br>
-  <br>
-  
-  <p id="introduction">Ville Pajala is a Software Developer & Content Creator
-  </p>
+<!-- Featured Work Section -->
+<section id="featured" class="featured-section py-5 bg-light">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <h2>Recent Builds</h2>
+      <p class="section-subtitle">My flagship product, plus things I’ve shipped along the way</p>
+    </div>
 
-  <p id="introduction">I'm passionate about code and I love to program. I currently work with robotic process automation (RPA) and I have been working with
-    web technologies such as <b>Angular, React, Node.js, JavaScript (ES6), TypeScript, Ionic, HTML, Bootstrap</b> and <b>CSS.</b>
-  </p>
+    <!-- MatchOps — Flagship Product -->
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="featured-card">
+          <div class="row g-0 align-items-center">
+            <div class="col-lg-5">
+              <div class="featured-image p-3 text-center">
+                <img src="assets/img/matchops/screenshot-field.jpg" alt="MatchOps coaching app" class="img-fluid rounded" loading="lazy" style="max-height: 460px;">
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="featured-content p-4">
+                <span class="featured-category">Flagship Product</span>
+                <h3 class="mb-2">MatchOps — Soccer &amp; Futsal Coaching App</h3>
+                <p>
+                  A local-first coaching companion for planning games, positioning players on an
+                  interactive field, tracking live scores and stats, and assessing performance.
+                  Works fully offline, with optional cloud sync across devices. Built as an
+                  installable PWA with an Android build, backed by <strong>4,500+ automated tests</strong>.
+                </p>
+                <div class="featured-tech">
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">Supabase</span>
+                  <span class="tech-tag">PWA</span>
+                  <span class="tech-tag">IndexedDB</span>
+                  <span class="tech-tag">Tailwind</span>
+                </div>
+                <div class="featured-actions mt-3">
+                  <a href="https://matchops-local.vercel.app" target="_blank" class="btn btn-sm btn-primary me-2">Open the App</a>
+                  <a href="https://github.com/VillePajala/MatchOps-Local" target="_blank" class="btn btn-sm btn-outline-primary">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <p id="introduction">Besides coding, I like creating content and I have skills in <b>visual</b> and <b>Sound Design.</b>
-  </p>
+    <div class="row">
+      <!-- Game Development Featured -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="featured-card">
+          <div class="featured-image">
+            <img src="assets/img/dev/tunnel.png" alt="The Tunnel Game" class="img-fluid" loading="lazy" width="640" height="360">
+          </div>
+          <div class="featured-content">
+            <span class="featured-category">Game Development</span>
+            <h4>The Tunnel - 3D Shooter</h4>
+            <p>A 3D first-person shooter game built with Unity, featuring advanced lighting, particle systems, and physics-based interactions.</p>
+            <div class="featured-tech">
+              <span class="tech-tag">Unity3D</span>
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">3D Graphics</span>
+            </div>
+            <div class="featured-actions mt-3">
+              <a href="https://github.com/VillePajala/The-Tunnel" target="_blank" class="btn btn-sm btn-outline-primary me-2">GitHub</a>
+              <a href="https://villepajala.itch.io/the-tunnel" target="_blank" class="btn btn-sm btn-primary">Play Game</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Web Development Featured -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="featured-card">
+          <div class="featured-image">
+            <img src="assets/img/dev/salarycalculator.png" alt="Salary Calculator App" class="img-fluid" loading="lazy" width="640" height="360">
+          </div>
+          <div class="featured-content">
+            <span class="featured-category">Mobile Development</span>
+            <h4>Net Salary Calculator</h4>
+            <p>A mobile application for calculating contract net worth after taxes and benefits, published on Google Play Store.</p>
+            <div class="featured-tech">
+              <span class="tech-tag">Ionic</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Mobile</span>
+            </div>
+            <div class="featured-actions mt-3">
+              <a href="https://github.com/VillePajala/ionic-contract-of-employment-evaluator" target="_blank" class="btn btn-sm btn-outline-primary me-2">GitHub</a>
+              <a href="https://play.google.com/store/apps/details?id=com.test.nettopalkkalaskuri" target="_blank" class="btn btn-sm btn-primary">Play Store</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-</div>
+<!-- Skills Section -->
+<section id="skills" class="skills-section py-5">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <h2>Toolkit</h2>
+      <p class="section-subtitle">Practical tools I reach for when building</p>
+    </div>
+    
+    <div class="row">
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="skill-category">
+          <h5>Web & Product</h5>
+          <div class="skill-tags">
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Angular</span>
+            <span class="skill-tag">PWA</span>
+            <span class="skill-tag">Tailwind</span>
+          </div>
+        </div>
+      </div>
 
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="skill-category">
+          <h5>Backend & Data</h5>
+          <div class="skill-tags">
+            <span class="skill-tag">Supabase</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">IndexedDB</span>
+          </div>
+        </div>
+      </div>
 
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="skill-category">
+          <h5>Automation & AI</h5>
+          <div class="skill-tags">
+            <span class="skill-tag">RPA</span>
+            <span class="skill-tag">UiPath</span>
+            <span class="skill-tag">Azure AI</span>
+            <span class="skill-tag">AI Agents</span>
+            <span class="skill-tag">AI-Assisted Dev</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="skill-category">
+          <h5>Tools & Platforms</h5>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Vercel</span>
+            <span class="skill-tag">Google Play</span>
+            <span class="skill-tag">Claude Code</span>
+            <span class="skill-tag">Unity3D</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- All Projects Section -->
+<section id="projects" class="projects-section py-5 bg-light">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <h2>Build Archive</h2>
+      <p class="section-subtitle">Shipped projects, experiments, and prototypes</p>
+    </div>
+    
+    <!-- Games Projects -->
+    <div class="project-category-section mb-5">
+      <h3 class="category-title">🎮 Game Development</h3>
+      <div class="row">
+        <!-- The Tunnel Game with Video -->
+        <div class="col-lg-6 col-md-6 mb-4 project-card" data-category="games">
+          <div class="project-card-inner">
+            <div class="project-media mb-3">
+              <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/zJPK_2dke8A" loading="lazy"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4>The Tunnel - 3D Shooter</h4>
+              <p>A 3D first-person shooter set in an underground tunnel with advanced lighting, particle systems, and physics-based interactions.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Unity3D</span>
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">ProBuilder</span>
+              </div>
+              <div class="project-actions mt-3">
+                <a href="https://github.com/VillePajala/The-Tunnel" target="_blank" class="btn btn-sm btn-outline-primary me-2">GitHub</a>
+                <a href="https://villepajala.itch.io/the-tunnel" target="_blank" class="btn btn-sm btn-primary">Play Game</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Island of Magick Game with Video -->
+        <div class="col-lg-6 col-md-6 mb-4 project-card" data-category="games">
+          <div class="project-card-inner">
+            <div class="project-media mb-3">
+              <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/77Y0aqixfug" loading="lazy"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4>The Island Of Magick</h4>
+              <p>A 3D first-person shooter set on an island with water terrain, shooting systems, and immersive soundscape.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Unity3D</span>
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">Terrain System</span>
+              </div>
+              <div class="project-actions mt-3">
+                <a href="https://github.com/VillePajala/Island-of-Magick" target="_blank" class="btn btn-sm btn-outline-primary me-2">GitHub</a>
+                <a href="https://villepajala.itch.io/the-island-of-magick" target="_blank" class="btn btn-sm btn-primary">Play Game</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Apple Hill Kill Game with Video -->
+        <div class="col-lg-6 col-md-6 mb-4 project-card" data-category="games">
+          <div class="project-card-inner">
+            <div class="project-media mb-3">
+              <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/4RdcjRlmqOU" loading="lazy"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4>Apple Hill Kill</h4>
+              <p>A 3D exploration game featuring a real-life 3D modeled house with interactive objects and shooting mechanics.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Unity3D</span>
+                <span class="tech-tag">SketchUp</span>
+                <span class="tech-tag">C#</span>
+              </div>
+              <div class="project-actions mt-3">
+                <a href="https://github.com/VillePajala/aPPLE-hILL-kILL" target="_blank" class="btn btn-sm btn-outline-primary me-2">GitHub</a>
+                <a href="https://villepajala.itch.io/apple-hill-kill" target="_blank" class="btn btn-sm btn-primary">Play Game</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Agent Amazement Game with Video -->
+        <div class="col-lg-6 col-md-6 mb-4 project-card" data-category="games">
+          <div class="project-card-inner">
+            <div class="project-media mb-3">
+              <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/HqZQuZfbOGk" loading="lazy"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4>Agent Amazement</h4>
+              <p>A 2D shooting game where an agent collects stars and battles enemies, featuring custom soundtrack and sprite animations.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Unity3D</span>
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">2D Graphics</span>
+              </div>
+              <div class="project-actions mt-3">
+                <a href="https://github.com/VillePajala/Agent-Amazement" target="_blank" class="btn btn-sm btn-outline-primary me-2">GitHub</a>
+                <a href="https://villepajala.itch.io/agent-amazement-play-in-browser" target="_blank" class="btn btn-sm btn-primary">Play Game</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Web & Mobile Development -->
+    <div class="project-category-section mb-5">
+      <h3 class="category-title">💻 Web & Mobile Builds</h3>
+      <div class="row">
+        <!-- MatchOps -->
+        <div class="col-lg-4 col-md-6 mb-4 project-card" data-category="web">
+          <div class="project-card-inner">
+            <div class="project-image mb-3">
+              <img src="assets/img/matchops/screenshot-stats.png" alt="MatchOps coaching app" class="img-fluid" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h4>MatchOps (Flagship)</h4>
+              <p>Local-first soccer &amp; futsal coaching app — game planning, live stats, and player assessment. Offline-first PWA with optional cloud sync and 4,500+ tests.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Supabase</span>
+                <span class="tech-tag">PWA</span>
+              </div>
+              <div class="project-actions mt-3">
+                <a href="https://matchops-local.vercel.app" target="_blank" class="btn btn-sm btn-primary me-2">Open the App</a>
+                <a href="https://github.com/VillePajala/MatchOps-Local" target="_blank" class="btn btn-sm btn-outline-primary">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio Website -->
+        <div class="col-lg-4 col-md-6 mb-4 project-card" data-category="web">
+          <div class="project-card-inner">
+            <div class="project-image mb-3">
+              <img src="assets/img/dev/portfolio.png" alt="Portfolio Website" class="img-fluid" loading="lazy" width="640" height="360">
+            </div>
+            <div class="project-content">
+              <h4>Professional Portfolio</h4>
+              <p>This responsive portfolio website built with Angular, featuring modern design and showcasing my development work.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Angular</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Bootstrap</span>
+              </div>
+              <div class="project-actions mt-3">
+                <a href="https://github.com/VillePajala/Professional-portfolio-site-with-angular" target="_blank" class="btn btn-sm btn-outline-primary">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Salary Calculator -->
+        <div class="col-lg-4 col-md-6 mb-4 project-card" data-category="mobile">
+          <div class="project-card-inner">
+            <div class="project-image mb-3">
+              <img src="assets/img/dev/salarycalculator.png" alt="Salary Calculator" class="img-fluid" loading="lazy" width="640" height="360">
+            </div>
+            <div class="project-content">
+              <h4>Net Salary Calculator</h4>
+              <p>A mobile app for calculating contract net worth after taxes, available on Google Play Store.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Ionic</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Mobile</span>
+              </div>
+              <div class="project-actions mt-3">
+                <a href="https://github.com/VillePajala/ionic-contract-of-employment-evaluator" target="_blank" class="btn btn-sm btn-outline-primary me-2">GitHub</a>
+                <a href="https://play.google.com/store/apps/details?id=com.test.nettopalkkalaskuri" target="_blank" class="btn btn-sm btn-primary">Play Store</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Programmers Tool Pack -->
+        <div class="col-lg-4 col-md-6 mb-4 project-card" data-category="web">
+          <div class="project-card-inner">
+            <div class="project-image mb-3">
+              <img src="assets/img/dev/ptp.png" alt="Programmers Tool Pack" class="img-fluid" loading="lazy" width="640" height="360">
+            </div>
+            <div class="project-content">
+              <h4>Programmer's Tool Pack</h4>
+              <p>A web application for managing user access rights with secure authentication and database management.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+              <div class="project-actions mt-3">
+                <a href="https://github.com/VillePajala/programmers-tool-pack-node.js" target="_blank" class="btn btn-sm btn-outline-primary">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section py-5">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <h2>Get in touch</h2>
+      <p class="section-subtitle">Building products, exploring AI, and open to interesting collaborations.</p>
+    </div>
+    
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <div class="contact-info text-center">
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="contact-item">
+                <i class="fab fa-linkedin contact-icon mb-3"></i>
+                <h5>LinkedIn</h5>
+                <a href="https://www.linkedin.com/in/ville-pajala/" target="_blank" class="btn btn-outline-primary">Connect with me</a>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="contact-item">
+                <i class="fab fa-github contact-icon mb-3"></i>
+                <h5>GitHub</h5>
+                <a href="https://github.com/VillePajala" target="_blank" class="btn btn-outline-primary">View my code</a>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="contact-item">
+                <i class="fab fa-twitter contact-icon mb-3"></i>
+                <h5>Twitter</h5>
+                <a href="https://twitter.com/VillePajala" target="_blank" class="btn btn-outline-primary">Follow me</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-4">
+            <p class="lead">Currently building MatchOps and exploring where AI and automation go next.</p>
+            <p>Have an idea, a product, or a workflow worth fixing? Let’s talk.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

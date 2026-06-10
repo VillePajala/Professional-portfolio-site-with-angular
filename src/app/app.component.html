@@ -1,130 +1,59 @@
-<div class="container" id="frame">
-
-    <a routerLink="" (click)="setActivePage('')"><div class="container-fluid d-none d-md-block" id="siteHeader">
-        <h1>Ville Johannes Pajala</h1>
-    </div></a>
-
-  <div class="row">
-
-    <div class="col-md-4" id="leftColumn">
-      <div class="container mt-3" id="header">
-        <div style="text-align:center">
-          <nav style="text-align:center" class="d-block d-md-none navbar navbar-expand-md bg-white navbar-light">
-            <a class="navbar-brand" id="smallScreenHeader">
-              <h3 id="smallScreenHeader">
-                Ville Johannes Pajala
-              </h3>
-            </a>
-            <button id="smallScreenHeader" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-              <span style="font-size: 15px" class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul class="navbar-nav"><br>
-                <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                  <a class="nav-link" routerLink=""><h6>home</h6></a>
-                </li>
-                <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                  <a class="nav-link" routerLink="art"><h6>Art</h6></a>
-                </li>
-                <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                  <a class="nav-link" routerLink="music"><h6>Music</h6></a>
-                </li>
-                <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                  <a class="nav-link" routerLink="design"><h6>Design</h6></a>
-                </li>
-                <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                  <a class="nav-link" routerLink="games"><h6>Games</h6></a>
-                </li>
-                <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                  <a class="nav-link" routerLink="dev"><h6>Code</h6></a>
-                </li>
-                <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                  <a class="nav-link" routerLink="curriculum"><h6>ABOUT ME</h6></a>
-                </li>
-                <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                  <a class="nav-link" routerLink="contact"><h6>Contact</h6></a>
-                </li> 
-              </ul>
-
-
-              <div class="container" id="socialMediaButton">
-                <br><br>
-                <span id="socialMediaButton">
-                  <a href="https://github.com/VillePajala" target="_blank"><i class="fab fa-github"></i></a>
-                </span>
-                <span id="socialMediaButton">
-                    <a href="https://www.facebook.com/johannes.kamikaze" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                </span>
-                <span id="socialMediaButton">
-                  <a href="https://www.linkedin.com/in/ville-pajala/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </span>
-                <span id="socialMediaButton">
-                  <a href="https://www.instagram.com/villejohannespajala/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </span>
-                <span id="socialMediaButton">
-                  <a href="https://twitter.com/VillePajala" target="_blank"><i class="fab fa-twitter"></i></a>
-                </span>
-              </div>
-        
-            </div>  
-          </nav>
-
-
-
-          <div style="text-align:right; transform: translate(-50px, 0);" class="container d-none d-md-block"><br><br>
-            <a routerLink="art" (click)="setActivePage('art')"><h6 class="mt-5"> 
-              <i *ngIf="currentPage == 'art'" class="fas fa-check" id="activePageIcon"></i>Art </h6>
-            </a>     
-            <a routerLink="music" (click)="setActivePage('music')"><h6 class="mt-3"> 
-              <i *ngIf="currentPage == 'music'" class="fas fa-check" id="activePageIcon"></i>Music </h6>
-            </a>
-            <a routerLink="design" (click)="setActivePage('design')"><h6 class="mt-3"> 
-              <i *ngIf="currentPage == 'design'" class="fas fa-check" id="activePageIcon"></i>Design </h6>
-            </a>
-            <a routerLink="games" (click)="setActivePage('games')"><h6 class="mt-3"> 
-              <i *ngIf="currentPage == 'games'" class="fas fa-check" id="activePageIcon"></i>Games </h6>
-            </a>
-            <a routerLink="dev" (click)="setActivePage('dev')"><h6 class="mt-3"> 
-              <i *ngIf="currentPage == 'dev'" class="fas fa-check" id="activePageIcon"></i>Code </h6>
-            </a>
-            <a routerLink="curriculum" (click)="setActivePage('curriculum')"><h6 class="mt-3"> 
-              <i *ngIf="currentPage == 'curriculum'" class="fas fa-check" id="activePageIcon"></i>ABOUT ME</h6>
-            </a>
-            <a routerLink="contact" (click)="setActivePage('contact')"><h6 class="mt-3"> 
-              <i *ngIf="currentPage == 'contact'" class="fas fa-check" id="activePageIcon"></i>Contact </h6>
-            </a>         
-          </div>  
-
-          <div style="text-align:right; transform: translate(-50px, 0); padding-right: 25px" class="container d-none d-md-block" id="socialMediaButton">
-            <br><br><br><br>
-            <span id="socialMediaButton">
-              <a href="https://github.com/VillePajala" target="_blank"><i class="fab fa-github"></i></a>
-            </span>
-            <span id="socialMediaButton">
-                <a href="https://www.facebook.com/johannes.kamikaze" target="_blank"><i class="fab fa-facebook-square"></i></a>
-            </span>
-            <span id="socialMediaButton">
-              <a href="https://www.linkedin.com/in/ville-pajala/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </span>
-            <span id="socialMediaButton">
-              <a href="https://www.instagram.com/villejohannespajala/" target="_blank"><i class="fab fa-instagram"></i></a>
-            </span>
-            <span id="socialMediaButton">
-              <a href="https://twitter.com/VillePajala" target="_blank"><i class="fab fa-twitter"></i></a>
-            </span>
-          </div>
-
-        </div> 
-      </div>
-
-    </div>
+<!-- Modern Top Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top" id="topNavbar">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand" href="#hero">
+      <h4 class="mb-0">Ville Johannes Pajala</h4>
+    </a>
     
-    <div class="col-md-8">
-        <router-outlet></router-outlet>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#featured">Builds</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Build Archive</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Toolkit</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="music">Music</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="art">Art</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+      
+      <!-- Social Media in Nav -->
+      <div class="ms-3 d-flex align-items-center">
+        <a href="https://github.com/VillePajala" target="_blank" class="social-link me-2">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ville-pajala/" target="_blank" class="social-link me-2">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://twitter.com/VillePajala" target="_blank" class="social-link">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
     </div>
-
   </div>
+</nav>
 
+<!-- Single Page Content -->
+<div class="single-page-container">
+  <router-outlet></router-outlet>
 </div>
-
-
