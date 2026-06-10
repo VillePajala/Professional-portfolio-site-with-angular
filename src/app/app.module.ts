@@ -9,46 +9,30 @@ import { AppComponent } from './app.component';
 import { ArtComponent } from './art/art.component';
 import { AboutComponent } from './about/about.component';
 import { MusicComponent } from './music/music.component';
-import { DesignComponent } from './design/design.component';
-import { GamesComponent } from './games/games.component';
-import { DevComponent } from './dev/dev.component';
-import { CurriculumComponent } from './curriculum/curriculum.component';
-import { ContactComponent } from './contact/contact.component';
+import { CvComponent } from './cv/cv.component';
 
 
 const routes : Routes = [
                       {
                         path : "",
                         component : AboutComponent
-                      },   
+                      },
                       {
                         path : "art",
                         component : ArtComponent
-                      },                     
+                      },
                       {
                         path : "music",
                         component : MusicComponent
                       },
                       {
-                        path : "design",
-                        component : DesignComponent
+                        path : "cv",
+                        component : CvComponent
                       },
                       {
-                        path : "games",
-                        component : GamesComponent
-                      }, 
-                      {
-                        path : "dev",
-                        component : DevComponent
-                      },
-                      {
-                        path : "curriculum",
-                        component : CurriculumComponent
-                      },
-                      {
-                        path : "contact",
-                        component : ContactComponent
-                      }                                                
+                        path : "**",
+                        redirectTo : ""
+                      }
 
 ]
 
@@ -57,14 +41,14 @@ const routes : Routes = [
         ArtComponent,
         AboutComponent,
         MusicComponent,
-        DesignComponent,
-        GamesComponent,
-        DevComponent,
-        CurriculumComponent,
-        ContactComponent
+        CvComponent
     ],
     bootstrap: [AppComponent], imports: [BrowserModule,
         BrowserAnimationsModule,
         FormsModule,
-        RouterModule.forRoot(routes, {})], providers: [provideHttpClient(withInterceptorsFromDi())] })
+        RouterModule.forRoot(routes, {
+            anchorScrolling: 'enabled',
+            scrollPositionRestoration: 'enabled',
+            scrollOffset: [0, 80]
+        })], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }

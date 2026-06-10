@@ -1,39 +1,36 @@
-<div class="container" id="rightColumn">
+<div class="art-page">
+  <div class="container" id="pageHeader">
+    <h2>ART</h2>
+  </div>
 
-    <div class="container" id="pageHeader">
-        <h2>ART</h2>
-    </div>
+  <p class="art-intro">
+    Black-and-white ink work made as <em>Johannes Kamikaze</em> (~2000–2015) —
+    eyes, sacred geometry, cellular networks, and horror vacui. Click any piece to view it large.
+  </p>
 
-    <img src="assets/img/drawings/numenx.jpg" loading="lazy" class="img-fluid" id="art">
-    <figcaption><span style="color: hotpink">"Numen X"</span><br> drawing, 21 x 30 cm, 2013</figcaption>
-
-    <img src="assets/img/drawings/the_stare_of_infinity.jpg" loading="lazy" class="img-fluid" id="art">
-    <figcaption><span style="color: hotpink">"The stare of Infinity"</span><br> drawing, 30 x 42 cm, 2014</figcaption>
-
-    <img src="assets/img/drawings/eyes_make_you_blind.jpg" loading="lazy" class="img-fluid" id="art">
-    <figcaption><span style="color: hotpink">"Eyes Make You Blind"</span><br> drawing, 21 x 30 cm, 2012</figcaption>
-
-    <img src="assets/img/drawings/sunyata.jpg" loading="lazy" class="img-fluid" id="art">
-    <figcaption><span style="color: hotpink">"Sunyata"</span><br> drawing, 42 x 59 cm, 2015</figcaption>
-
-    <img src="assets/img/drawings/advocatus_diabolis.jpg" loading="lazy" class="img-fluid" id="art">
-    <figcaption><span style="color: hotpink">"Advocatus Diabolis"</span><br> drawing, 21 x 30 cm, 2012</figcaption>
-
-    <img src="assets/img/drawings/maaralak.jpg" loading="lazy" class="img-fluid" id="art">
-    <figcaption><span style="color: hotpink">"Maar-Alak"</span><br> drawing, 42 x 59 cm, 2015</figcaption>
-
-    <img src="assets/img/drawings/reality_tunnel_network.jpg" loading="lazy" class="img-fluid" id="art">
-    <figcaption><span style="color: hotpink">"Reality Tunnel Network"</span><br> drawing, 30 x 42 cm, 2014</figcaption>
-
-    <img src="assets/img/drawings/phowa.jpg" loading="lazy" class="img-fluid" id="art">
-    <figcaption><span style="color: hotpink">"Phowa"</span><br> drawing, 21 x 30 cm, 2013</figcaption>
-
-    <img src="assets/img/drawings/portal.jpg" loading="lazy" class="img-fluid" id="art">
-    <figcaption><span style="color: hotpink">"Portal"</span><br> 21 x 30 cm, 2013</figcaption>
-
-    <img src="assets/img/drawings/nigredo.jpg" loading="lazy" class="img-fluid" id="art">
-    <figcaption><span style="color: hotpink">"Nigredo"</span><br> drawing , 21 x 30 cm, 2013</figcaption>
-
+  <div class="art-gallery">
+    <figure class="art-tile" *ngFor="let art of artworks; let i = index" (click)="open(i)">
+      <img [src]="art.src" [alt]="art.title" loading="lazy" class="img-fluid">
+      <figcaption>
+        <span class="art-title">{{ art.title }}</span>
+        <span class="art-meta">{{ art.meta }}</span>
+      </figcaption>
+    </figure>
+  </div>
 </div>
 
+<!-- Lightbox -->
+<div class="lightbox" *ngIf="lightboxOpen" (click)="close()">
+  <button class="lightbox-close" (click)="close()" aria-label="Close">&times;</button>
+  <button class="lightbox-nav lightbox-prev" (click)="prev($event)" aria-label="Previous">&#8249;</button>
 
+  <figure class="lightbox-content" (click)="$event.stopPropagation()">
+    <img [src]="artworks[currentIndex].src" [alt]="artworks[currentIndex].title">
+    <figcaption>
+      <span class="art-title">{{ artworks[currentIndex].title }}</span>
+      <span class="art-meta">{{ artworks[currentIndex].meta }}</span>
+    </figcaption>
+  </figure>
+
+  <button class="lightbox-nav lightbox-next" (click)="next($event)" aria-label="Next">&#8250;</button>
+</div>
