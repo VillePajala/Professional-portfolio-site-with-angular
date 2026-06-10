@@ -1,0 +1,112 @@
+<div class="cv-page">
+  <div class="container">
+
+    <!-- Header -->
+    <header class="cv-header text-center cv-reveal">
+      <p class="cv-overline">Curriculum Vitae</p>
+      <h1>Ville Pajala</h1>
+      <p class="cv-title">AI Engineer · AI &amp; Automation Consultant at CGI</p>
+      <p class="cv-summary">
+        6+ years of automation delivery across finance, education, HR, and telecom.
+        I automate as much as possible — traditional RPA, AI agents, AI-assisted coding,
+        or whatever combination fits. Early AI-in-RPA adopter, UiPath Maestro pioneer,
+        now building agentic AI on Azure. On my own time I shipped
+        <strong>MatchOps</strong>, a full-stack coaching app with 4,500+ tests.
+      </p>
+      <div class="cv-facts">
+        <div class="cv-fact"><span class="cv-fact-num">6+</span><span class="cv-fact-label">years in automation</span></div>
+        <div class="cv-fact"><span class="cv-fact-num">14</span><span class="cv-fact-label">certifications</span></div>
+        <div class="cv-fact"><span class="cv-fact-num">9.6</span><span class="cv-fact-label">/10 client satisfaction</span></div>
+        <div class="cv-fact"><span class="cv-fact-num">FI · EN</span><span class="cv-fact-label">native · full professional</span></div>
+      </div>
+    </header>
+
+    <!-- Timeline -->
+    <section class="cv-section">
+      <h2 class="cv-section-title cv-reveal">Experience</h2>
+      <div class="cv-timeline">
+        <div class="cv-entry cv-reveal" *ngFor="let e of timeline" [class.open]="e.open">
+          <div class="cv-entry-dot"><i [class]="e.icon"></i></div>
+          <button type="button" class="cv-entry-head" (click)="toggle(e)" [attr.aria-expanded]="e.open">
+            <div class="cv-entry-meta">
+              <span class="cv-entry-period">{{ e.period }}</span>
+              <span class="cv-entry-tag">{{ e.tag }}</span>
+            </div>
+            <h3>{{ e.title }}</h3>
+            <p class="cv-entry-org">{{ e.org }}</p>
+            <span class="cv-entry-chevron" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="cv-entry-body" [hidden]="!e.open">
+            <ul>
+              <li *ngFor="let h of e.highlights">{{ h }}</li>
+            </ul>
+            <div class="cv-entry-tech" *ngIf="e.tech.length">
+              <span class="tech-tag" *ngFor="let t of e.tech">{{ t }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="cv-section">
+      <h2 class="cv-section-title cv-reveal">Skills</h2>
+      <div class="cv-tabs cv-reveal" role="tablist">
+        <button
+          type="button"
+          class="cv-tab"
+          *ngFor="let c of skillCategories; let i = index"
+          [class.active]="activeCategory === i"
+          (click)="selectCategory(i)"
+          role="tab"
+          [attr.aria-selected]="activeCategory === i">
+          {{ c.category }}
+        </button>
+      </div>
+
+      <div class="cv-skills cv-reveal">
+        <div class="cv-skill" *ngFor="let s of skillCategories[activeCategory].items">
+          <div class="cv-skill-row">
+            <span class="cv-skill-name">{{ s.skill }}</span>
+            <span class="cv-skill-level">{{ levelLabels[s.level] }} · {{ s.years }} yr{{ s.years > 1 ? 's' : '' }}</span>
+          </div>
+          <div class="cv-bar">
+            <div class="cv-bar-fill" [style.width.%]="barWidth(s.level)"></div>
+          </div>
+          <p class="cv-skill-note" *ngIf="s.note">{{ s.note }}</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="cv-section">
+      <h2 class="cv-section-title cv-reveal">Certifications</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-3" *ngFor="let c of visibleCerts">
+          <div class="cv-cert cv-reveal">
+            <i class="fas fa-certificate" aria-hidden="true"></i>
+            <div>
+              <h6>{{ c.name }}</h6>
+              <p>{{ c.issuer }} · {{ c.date }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-2">
+        <button type="button" class="btn btn-outline-primary" (click)="showAllCerts = !showAllCerts">
+          {{ showAllCerts ? 'Show fewer' : 'Show all ' + certs.length }}
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="cv-section text-center cv-reveal">
+      <p class="cv-cta-line">Want the full story, or the formal document version?</p>
+      <div class="d-flex gap-2 justify-content-center flex-wrap">
+        <a href="https://www.linkedin.com/in/ville-pajala/" target="_blank" class="btn btn-primary">LinkedIn</a>
+        <a routerLink="/" fragment="contact" class="btn btn-outline-primary">Get in touch</a>
+      </div>
+    </section>
+
+  </div>
+</div>

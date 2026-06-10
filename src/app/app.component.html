@@ -1,7 +1,7 @@
 <!-- Modern Top Navigation -->
 <nav class="navbar navbar-expand-lg fixed-top" id="topNavbar">
   <div class="container-fluid px-4">
-    <a class="navbar-brand" href="#hero">
+    <a class="navbar-brand" routerLink="/" (click)="onBrandClick()">
       <h4 class="mb-0">Ville Johannes Pajala</h4>
     </a>
     
@@ -12,28 +12,25 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" routerLink="">Home</a>
+          <a class="nav-link" routerLink="/" fragment="about">Story</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" routerLink="/" fragment="featured">MatchOps</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#featured">Builds</a>
+          <a class="nav-link" routerLink="/art">Art</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#projects">Build Archive</a>
+          <a class="nav-link" routerLink="/music">Music</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#skills">Toolkit</a>
+          <a class="nav-link" routerLink="/" fragment="projects">Archive</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="music">Music</a>
+          <a class="nav-link" routerLink="/cv">CV</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="art">Art</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" routerLink="/" fragment="contact">Contact</a>
         </li>
       </ul>
       
@@ -56,4 +53,15 @@
 <!-- Single Page Content -->
 <div class="single-page-container">
   <router-outlet></router-outlet>
+</div>
+
+<!-- Ink cursor trail + click ripples (desktop, motion-safe only) -->
+<canvas #inkCanvas class="ink-canvas" aria-hidden="true"></canvas>
+
+<!-- Ink-bleed page transition -->
+<div class="ink-wipe" [class.active]="inkWipe" aria-hidden="true"></div>
+
+<!-- Easter egg: triple-click the name → two decades of ink flood the page -->
+<div class="art-flood" *ngIf="floodActive" aria-hidden="true">
+  <img *ngFor="let a of floodArt" [src]="a.src" [ngStyle]="a.style" alt="" loading="eager">
 </div>
